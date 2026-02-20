@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* circle container */
+  .circle {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    width: 80px;
+    height: 80px;
+  
+    border-radius: 50%;
+    overflow: hidden;
+  
+    border: 3px solid white;
+    background: white;
+  }
+  
+  /* circle image */
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* content */
+  .content {
+    margin-top: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+  }
+  
