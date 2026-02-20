@@ -1,54 +1,117 @@
 .card {
-    position: relative;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 60px 20px 20px 20px;
-    text-align: center;
-    border-radius: 6px;
-    transition: 0.3s;
-  }
+  position: relative;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 70px 20px 30px 20px; /* balanced padding */
+
+  text-align: center;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+
+  /* height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+/* Circle */
+.circle {
+  position: absolute;
+
+  top: -45px;   /* balanced offset */
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: white;
+
+  border: 4px solid #f3e5c3;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+
+.card:hover .circle img {
+  transform: scale(1.08);
+}
+
+
+.content {
+  flex: 1;
   
-  .card:hover {
-    transform: translateY(-5px);
+}
+
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+
+.description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .card {
+    padding: 65px 18px 25px 18px;
   }
-  
-  /* circle container */
+
   .circle {
-    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -42px;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .card {
+    padding: 60px 16px 22px 16px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
     top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-  
-    width: 80px;
-    height: 80px;
-  
-    border-radius: 50%;
-    overflow: hidden;
-  
-    border: 3px solid white;
-    background: white;
   }
-  
-  /* circle image */
-  .circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* content */
-  .content {
-    margin-top: 10px;
-  }
-  
-  .title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  
-  .description {
-    font-size: 14px;
-    color: #555;
-  }
-  
+
+}

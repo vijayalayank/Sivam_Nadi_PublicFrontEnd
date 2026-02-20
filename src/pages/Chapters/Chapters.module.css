@@ -1,0 +1,93 @@
+/* Main page wrapper */
+.page {
+    width: 100%;
+    background-color: #faf7f2; /* light spiritual background */
+  }
+  
+  
+  /* Section below hero */
+  .chapterSection {
+    padding: 80px 20px;
+  }
+  
+  
+  /* Center container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  /* Page heading */
+  .heading {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Description text */
+  .description {
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+  }
+  
+  
+  /* Chapter grid wrapper */
+  .gridWrapper {
+    margin-top: 40px;
+  }
+  
+  
+  /* Optional golden divider */
+  .divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #c89b3c, #f5d27a);
+    margin: 20px auto 40px auto;
+    border-radius: 2px;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+  
+    .heading {
+      font-size: 30px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+  
+    .chapterSection {
+      padding: 60px 15px;
+    }
+  
+    .heading {
+      font-size: 26px;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+  
+    .heading {
+      font-size: 22px;
+    }
+  
+    .description {
+      font-size: 15px;
+    }
+  
+  }

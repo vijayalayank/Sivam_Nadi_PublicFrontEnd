@@ -1,7 +1,51 @@
+/* Main grid container */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px 25px;
-    padding: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  /* gap: 90px 30px;    */
+
+  padding-top: 80px; /* important */
+}
+
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .grid {
+    max-width: 1300px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px 40px;
   }
-  
+}
+
+@media (min-width: 990px) {
+  .grid {
+    max-width: 1300px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px 40px;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 110px 25px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 100px 20px;
+    padding: 60px 15px;
+  }
+}
