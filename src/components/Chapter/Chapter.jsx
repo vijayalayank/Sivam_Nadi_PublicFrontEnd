@@ -1,21 +1,14 @@
 import ChapterCard from "../ChapterCard/ChapterCard"
-import styles from "./Chapters.module.css";
-
+import styles from "./Chapter.module.css";
+import { chaptersData } from "../../data/chapters";
 
 function Chapter() {
 
-  const chapters = [
-    {
-      title: "Chapter 1",
-      description: "Introduction to Sivanadi",
-      image: img1
-    },
-    // total 12 chapters
-  ];
+
 
   return (
     <div className={styles.grid}>
-      {chapters.map((chapter, index) => (
+      {chaptersData.map((chapter, index) => (
         <ChapterCard
           key={index}
           image={chapter.image}
@@ -27,4 +20,4 @@ function Chapter() {
   );
 }
 
-export default Chapters;
+export default Chapter;

@@ -1,0 +1,36 @@
+
+.gal{
+    margin: 3%;
+  }
+ 
+
+.masonryGrid {
+    display: flex;
+    margin-left: -20px;
+    width: auto;
+  }
+  
+  .masonryColumn {
+    padding-left: 20px;
+    background-clip: padding-box;
+  }
+  
+  .imageCard {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .imageCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  
+    transition: transform 0.3s ease;
+  }
+  
+  .imageCard:hover img {
+    transform: scale(1.03);
+  }
+
