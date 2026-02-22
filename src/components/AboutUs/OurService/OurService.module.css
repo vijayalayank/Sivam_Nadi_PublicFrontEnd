@@ -1,0 +1,92 @@
+.main {
+  padding: 80px 20px;
+  background: #f4efe6;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.head h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1d1d1d;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.head h1:hover {
+  transform: scale(1.04);
+}
+
+/* GRID LAYOUT */
+.servicesGrid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.imageWrapper img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* TITLE */
+.title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium Mobile */
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    max-width: 360px;
+  }
+}

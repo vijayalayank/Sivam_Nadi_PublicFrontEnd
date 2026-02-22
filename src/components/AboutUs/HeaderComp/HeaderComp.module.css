@@ -1,0 +1,31 @@
+.head{
+    width:100%;
+    /* height: 90vh; */
+    height:100%
+}
+
+.parent{
+    height: 70vh;
+    /* border: 2px solid red; */
+    padding: 5px;
+}
+
+
+/* Desktop (default styles above) */
+
+/* Tablet */
+
+
+/* Mobile */
+@media (max-width: 768px) {
+   .parent{
+     height: 50vh;
+   }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .parent{
+     height: 30vh;
+   }
+}

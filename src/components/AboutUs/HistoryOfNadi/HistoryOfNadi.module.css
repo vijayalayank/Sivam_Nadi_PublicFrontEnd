@@ -1,0 +1,102 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: gold; /* gold tone */
+  margin: 15px auto 10px;
+  border-radius: 2px;
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+.abc{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    padding:1rem
+}
+
+.abc .content{
+    width: 50%;
+    padding: 1rem;
+    text-align: justify;
+   font-family: "Poppins", sans-serif;
+ 
+}
+
+.abc .image{
+  
+    width: 50%;
+    /* border: 10px solid red; */
+    border-radius: 1rem;
+
+      display: inline-block; /* IMPORTANT for smooth transform */
+  transition: transform 0.35s ease, letter-spacing 0.35s ease;
+}
+
+.abc img{
+    height:100%;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.image:hover{
+    
+  transform: scale(1.02);
+  animation: scaleIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Desktop (default styles above) */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .abc{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 1rem; */
+    }
+    .abc .image{
+        width: 80%;
+    }
+    .abc .content{
+        width: 80%;
+    }
+   
+}
+
+/* Mobile */
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .abc{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 1rem; */
+    }
+    .abc .image{
+        width: 80%;
+    }
+    .abc .content{
+        width: 80%;
+    }
+    .header h1{
+        font-size: large;
+
+    }
+    .abc .content{
+        font-size: small;
+        text-align: left;
+    }
+}
