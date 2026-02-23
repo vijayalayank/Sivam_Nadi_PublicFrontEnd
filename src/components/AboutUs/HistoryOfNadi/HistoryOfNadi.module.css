@@ -5,17 +5,7 @@
 }
 
 
-.header::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 4px;
-  background-color: gold; /* gold tone */
-  margin: 15px auto 10px;
-  border-radius: 2px;
-  font-family: "Poppins", sans-serif;
- 
-}
+
 
 .abc{
     width: 80%;
