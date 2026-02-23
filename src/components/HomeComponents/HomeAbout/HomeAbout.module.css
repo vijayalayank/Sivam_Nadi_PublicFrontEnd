@@ -1,0 +1,63 @@
+.HomeAbout {
+    width:100%;
+}
+
+.Title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.45em;
+    padding: 1.2em .5em;
+}
+
+.Divider{
+    width: 15%;
+    height: 3px;
+    background: linear-gradient(to right, #c89b3c, #f5d27a);
+    margin: 15px auto 0px  auto;
+    border-radius: 2px;
+}
+
+.CardContent{
+    display: flex;
+    /* border:  1px solid #000; */
+    justify-content: space-around;
+    padding :1em 0em;
+}
+
+.poster{
+    width:37%;
+    border: #000 1px solid;
+    border-radius: 10px;
+}
+
+.CardContiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1em;
+    width:60%;
+    /* border: #000 1px solid; */
+    padding :1em 0em;
+}
+
+.Card {
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.imageContiner{
+    border-bottom: 1px solid #000;
+    width:100%;
+    height:12em;
+}
+
+.TextContiner{
+    width:100%;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}

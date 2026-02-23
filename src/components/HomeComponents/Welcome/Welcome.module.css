@@ -1,0 +1,78 @@
+.outerContainer{
+    width:100%;
+}
+
+
+.Title{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding :1em 0em;
+    background: linear-gradient(to right,#c89b3c, #f5d27a );
+    color:#584002
+}
+
+
+.outerContainer{
+    width: 100%;
+}
+
+.welcomeContainer{
+    display: flex;
+    width:100%;
+    border:1px solid #000;
+    padding :2em 0em;
+    justify-content: space-around;
+}
+
+.box1{
+    width: 25%;
+    padding:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:45%;
+}
+
+.WelTitle{
+    padding:1em;
+    text-align: center;
+}
+
+.para{
+    padding: .5em 1em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.para p {
+    margin:.5em 0em;
+}
+.box3{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.LeftImage{
+    height:70%;
+    border: #000 1px solid;
+    width:90%;
+    border-radius: 10px;
+}
+
+.RightImage{
+    height:70%;
+    border: #000 1px solid;
+    width:90%;
+    border-radius: 10px;
+}

@@ -1,0 +1,47 @@
+.seperationContainer{
+    display:flex;
+    width:100%;
+    border:1px solid black;
+    padding:1.5em 0em;
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:35%;
+}
+
+.box2{
+    width:30%;
+    padding:1.5em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qoute{
+    font-size: 1.7em;
+}
+
+.written{
+    padding:.5em 0em;
+    font-size: 1.4em;
+    text-align: end;
+}
+
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:35%;
+
+}
+
+
+.Image{
+    width: 60%;
+    padding:10em;
+    border:1px solid;
+    border-radius: 10px;
+}
