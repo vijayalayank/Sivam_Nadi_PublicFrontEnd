@@ -1,0 +1,16 @@
+.image img{
+    height: 50px;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 1rem; */
+    /* border: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+      /* background: #f2f2f2; */
+}

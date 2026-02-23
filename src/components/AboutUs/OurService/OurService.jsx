@@ -1,14 +1,12 @@
 import style from "./OurService.module.css"
-
+import GoldenHeader from "../../GoldenHeader/GoldenHeader"
 
 export default function OurService({Ourservice}){
     return(
     <>
         <div className={style.main}>
   
-  <div className={style.head}>
-    <h1>Our Services</h1>
-  </div>
+  <GoldenHeader heading={"Our Services"}/>
 
   <div className={style.servicesGrid}>
     {Ourservice.map((service, index) => (

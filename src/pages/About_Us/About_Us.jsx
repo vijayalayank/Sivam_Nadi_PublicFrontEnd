@@ -9,7 +9,7 @@ export default function About_Us(){
     return(
         <>
            
-            <HeaderComp Aboutheaderimage={AboutHeaderImage}/>
+            <HeaderComp headerimage={AboutHeaderImage}/>
             <HistoryOfNadi history={history_of_nadi}/>
             <OurService Ourservice={Ourservice}/>
 

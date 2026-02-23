@@ -5,8 +5,9 @@
 }
 
 .parent{
-    height: 100vh;
-  
+    height: 70vh;
+    /* border: 2px solid red; */
+    padding: 5px;
 }
 
 
@@ -18,17 +19,12 @@
 /* Mobile */
 @media (max-width: 768px) {
    .parent{
-     height: 60vh;
+     height: 50vh;
    }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
-  .parent{
-     height: 50vh;
-   }
-}
-@media (max-width:376px) {
   .parent{
      height: 30vh;
    }

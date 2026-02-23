@@ -8,6 +8,17 @@
   margin-bottom: 60px;
 }
 
+.head h1::after{
+   content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: gold; /* gold tone */
+  margin: 15px auto 10px;
+  border-radius: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
 .head h1 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
