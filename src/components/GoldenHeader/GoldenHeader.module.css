@@ -2,24 +2,29 @@
   text-align: center;
   padding-bottom: 15px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem
+  margin: 2rem 0;
 }
 
 .heading h1 {
   display: inline-block;
- 
-  /* padding: 6px 14px; */
-  /* font-size: large; */
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+
+  
 }
-.heading h1::after{
-     content: "";
+
+.heading h1::after {
+  content: "";
   display: block;
   width: 100px;
   height: 4px;
-  background-color: gold; /* gold tone */
+  background: linear-gradient(to right, #c89b3c, #f5d27a);
   margin: 15px auto 10px;
   border-radius: 2px;
-  font-family: "Poppins", sans-serif;
 }
+
+
+/* .heading h1:hover {
+ transform: scale(1.02);
+  animation: scaleIn 5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+} */

@@ -8,8 +8,9 @@ export default function HistoryOfNadi({history}){
     
     return(
         <>
-        <div className={style.main}>
         <GoldenHeader heading={history.title} />
+        <div className={style.main}>
+        
                 
          {history.ImageLeft ? (
                 <div className={style.abc}>

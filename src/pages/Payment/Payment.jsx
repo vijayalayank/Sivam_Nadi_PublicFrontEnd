@@ -6,8 +6,9 @@ import AccountDetailes from "../../components/Payment/AccountDetails/AccountDeta
 
 export default function Payment(){
     return(<>
-            <div className={style.main}>
-                <HeaderComp headerimage={PaymentHeaderImage}/>
+    <div className={style.main}> 
+            <HeaderComp headerimage={PaymentHeaderImage}/>
+            
                 <FeeStructure  FeeStruc={FeeStruc}/>
                 <AccountDetailes />
             </div>

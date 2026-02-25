@@ -4,7 +4,8 @@ import Feestrucimg from "../../public/ImageFolder/Payment/FeeStructure.png"
 
 
 const PaymentHeaderImage = {
-    image:Payment_Header
+    image:Payment_Header,
+    title:"Payment"
 }
 
 const FeeStruc = {

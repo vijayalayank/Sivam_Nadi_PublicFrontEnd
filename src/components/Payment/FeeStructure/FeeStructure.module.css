@@ -1,6 +1,6 @@
 .main {
   padding: 60px 20px;
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
 }
 
 /* ===== Heading Section ===== */
@@ -48,9 +48,10 @@
 /* Paragraph */
 .content {
   max-width: 500px;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   line-height: 1.6;
   text-align: justify;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 768px) {
