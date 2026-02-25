@@ -9,7 +9,9 @@ const HistoryComponent = () => {
                 <div className={style.seperationContainer}>
                     <div className={style.box1}>
 
-                        <div className={style.Image}></div>
+                        <div className={style.Image}>
+                            <img src="./public/ImageFolder/Home/History_Image1.jpeg" alt="" />
+                        </div>
 
                     </div>
 
@@ -27,7 +29,9 @@ const HistoryComponent = () => {
                     </div>
 
                     <div className={style.box3}>
-                        <div className={style.Image}></div>
+                        <div className={style.Image}>
+                            <img src="./public/ImageFolder/Home/History_Image2.jpeg" alt="" />
+                        </div>
 
                         
                     </div>

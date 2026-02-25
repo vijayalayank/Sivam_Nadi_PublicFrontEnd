@@ -12,8 +12,8 @@ const WelcomeComponent = () => {
 
                 <div className={style.welcomeContainer}>
                     <div className={style.box1}>
-                        <div className={style.LeftImage}>
-
+                        <div className={style.Image}>
+                                <img src="./public/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
                         </div>
                     </div>
 
@@ -41,7 +41,10 @@ const WelcomeComponent = () => {
                     </div>
 
                     <div className={style.box3}>
-                        <div className={style.RightImage}></div>
+                        <div className={style.Image}>
+                            <img src="./public/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
+
+                        </div>
                     </div>
                 </div>
             </div>

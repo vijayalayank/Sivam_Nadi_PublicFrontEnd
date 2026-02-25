@@ -1,5 +1,6 @@
 .outerContainer{
     width:100%;
+    background-color: #FAF7F2;
 }
 
 
@@ -20,7 +21,6 @@
 .welcomeContainer{
     display: flex;
     width:100%;
-    border:1px solid #000;
     padding :2em 0em;
     justify-content: space-around;
 }
@@ -42,14 +42,14 @@
 }
 
 .WelTitle{
-    padding:1em;
+    padding:.5em 1em;
     text-align: center;
 }
 
 .para{
-    padding: .5em 1em;
+    padding: 0em 1em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .para p {
@@ -57,22 +57,23 @@
 }
 .box3{
     width:25%;
+     padding:1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.LeftImage{
+.Image{
     height:70%;
-    border: #000 1px solid;
     width:90%;
     border-radius: 10px;
 }
 
-.RightImage{
-    height:70%;
-    border: #000 1px solid;
-    width:90%;
+.Image img{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
+
+

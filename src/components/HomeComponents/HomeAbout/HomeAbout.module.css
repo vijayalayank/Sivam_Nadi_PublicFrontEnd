@@ -27,30 +27,68 @@
 }
 
 .poster{
-    width:37%;
-    border: #000 1px solid;
+    width: 32%;
     border-radius: 10px;
 }
 
+.poster img{
+    width:100%;
+    height:35em;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.buttonContiner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding : 1em;
+    background-color: #eee8d9;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.Call{
+    padding: .5em 1.3em;
+    font-size: 1.2em;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(5, 207, 39);
+    color:aliceblue;
+}
+
+.Appoint{
+    padding:.5em 1.3em;
+    font-size: 1.2em;
+    border:none;
+    border-radius: 10px;
+    background-color:#F1CD74 ;
+}
+
 .CardContiner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap:1em;
     width:60%;
+    flex-wrap: wrap;
     /* border: #000 1px solid; */
     padding :1em 0em;
 }
 
 .Card {
-    height: 100%;
-    border: 1px solid #000;
+    height: 17em;
+    width:30%;
+    color : rgb(155, 1, 1);
     border-radius: 10px;
 }
 
 .imageContiner{
     border-bottom: 1px solid #000;
     width:100%;
-    height:12em;
+    height:13em;
+}
+
+.imageContiner img{
+    width:100%;
+    height:100%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .TextContiner{
@@ -60,4 +98,48 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(186deg, rgba(240, 247, 193, 1) 1%, rgba(240, 219, 156, 1) 34%, rgba(255, 207, 15, 0.91) 100%);
+}
+
+
+
+
+/* ================== RESPONSIVE ================== */
+
+@media (max-width: 1024px) {
+
+    .CardContent{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster{
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    .CardContiner{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .Card{
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Card{
+        width: 100%;
+    }
+
+    .poster img{
+        height: auto;
+    }
+
+    .imageContiner{
+        height: auto;
+    }
 }
