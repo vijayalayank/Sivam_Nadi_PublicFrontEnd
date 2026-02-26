@@ -125,3 +125,21 @@
     width: 100%;
   }
 }
+
+
+.imageWrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: translateX(20px);
+}

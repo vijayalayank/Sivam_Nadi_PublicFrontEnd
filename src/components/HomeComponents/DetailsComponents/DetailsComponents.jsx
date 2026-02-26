@@ -4,15 +4,15 @@ import style from "./DetailsComponents.module.css";
 const DetailsComponents = () => {
 
     const content = [
-        {
+        {   image:"./public/ImageFolder/Home/AuthenticReading.png",
             title: "AUTHENTIC READING",
             description: "Get your Nadi reading from the original Nadi family"
         },
-        {
+        {   image:"./public/ImageFolder/Home/Languages.png",
             title: "AVAILABLE IN MAJOR LANGUAGES",
-            description: "Get your Nadi reading from the original Nadi family"
+            description: "தமிழ், English, Hindi, Telugu, Kanada"
         },
-        {
+        {   image:"./public/ImageFolder/Home/TakeToUs.png",
             title: "TALK TO US",
             description: "+91 75980 04142 / 82709 94142"
         }
@@ -26,6 +26,7 @@ const DetailsComponents = () => {
                     content.map((item, index) => {
                         return (
                             <div className={style.box1} key={index}>
+                                <img src={item.image} alt="" />
                                 <h2 className={style.Title}>{item.title}</h2>
                                 <p className={style.Description}>{item.description}</p>
                             </div>

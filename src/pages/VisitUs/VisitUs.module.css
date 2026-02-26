@@ -1,3 +1,4 @@
 .main{
-  
+  background: #ffc9c9;
+background: linear-gradient(186deg, rgba(255, 201, 201, 1) 0%, rgba(255, 243, 176, 0.54) 40%, rgba(156, 216, 232, 0.52) 64%, rgba(215, 222, 140, 0.88) 100%); 
 }

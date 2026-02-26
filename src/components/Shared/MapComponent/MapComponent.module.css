@@ -1,5 +1,39 @@
-.main{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+/* Wrapper */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* ===================== */
+/* Mobile First Design */
+/* ===================== */
+
+.mapContainer {
+  width: 100%;
+  height: 250px;
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* ===================== */
+/* Tablet View */
+/* ===================== */
+@media (min-width: 768px) {
+  .mapContainer {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+/* ===================== */
+/* Desktop View */
+/* ===================== */
+@media (min-width: 1024px) {
+  .mapContainer {
+    width: 60%;
+    height: 50vh;
+  }
 }
