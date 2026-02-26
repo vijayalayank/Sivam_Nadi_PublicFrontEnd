@@ -1,32 +1,38 @@
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
-import style from "./MapComponent.module.css"
+import style from "./MapComponent.module.css";
 
-const center = { lat: 11.1436938, lng: 79.7654279 }; 
-
+const center = {
+  lat: 11.1436938,
+  lng: 79.7654279,
+};
 
 const MapComponent = () => {
-    const { isLoaded } = useLoadScript({
-        googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY, // Replace with actual API Key
-    });
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+  });
 
-    if (!isLoaded) return <p>Loading Map...</p>;
+  if (loadError) return <p>Failed to load map</p>;
+  if (!isLoaded) return <p>Loading Map...</p>;
 
-    return(
-        <>  
-        <div className={style.main}>
-            <GoogleMap zoom={14} center={center} mapContainerStyle={{ width: "60%", height: "50vh" ,margin:"1rem",borderRadius:"1rem"}}>
-            <Marker position={center} label={{
-                text: "Sivam Nadi Astrology Centre",
-                color: "black",
-                fontSize: "14px",
-                fontWeight: "bold",
-                // padding: "5px",
-            }} />   
-            </GoogleMap>
-        </div>
-        </>
-    )
-}
-
+  return (
+    <div className={style.main}>
+      <GoogleMap
+        zoom={14}
+        center={center}
+        mapContainerClassName={style.mapContainer}
+      >
+        <Marker
+          position={center}
+          label={{
+            text: "Sivam Nadi Astrology Centre",
+            color: "black",
+            fontSize: "14px",
+            fontWeight: "bold",
+          }}
+        />
+      </GoogleMap>
+    </div>
+  );
+};
 
 export default MapComponent;
