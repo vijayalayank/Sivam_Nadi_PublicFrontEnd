@@ -1,0 +1,124 @@
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: #f7f7f7;
+}
+
+/* ================= TOP BAR ================= */
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width:18%;
+}
+
+.logo {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Appointment */
+.appointmentBtn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #000;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Right Section */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contactText p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.languageSelect {
+  padding: 0.3rem 0.5rem;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ================= MENU BAR ================= */
+
+.menuBar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.8rem 0;
+  background: #e0e0e0;
+}
+
+.menuBar a {
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.menuBar a:hover {
+  background: #c89b3c;
+  color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+
+  .rightSection {
+    display: none;
+  }
+
+  .appointmentBtn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menuBar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuBar.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .topBar {
+    padding: 1rem;
+  }
+
+  .logoSection h3 {
+    font-size: 1rem;
+  }
+
+  .logoSection p {
+    font-size: 0.7rem;
+  }
+}

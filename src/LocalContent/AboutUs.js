@@ -31,7 +31,8 @@ Nadi Astrology, practiced primarily in Tamil Nadu, South India, is traditionally
 }
 
 const AboutHeaderImage = {
-    image:AboutUsHeader
+    image:AboutUsHeader,
+    title:"About Nadi Atrology"
 }
 
 const Ourservice = 
@@ -41,31 +42,31 @@ const Ourservice =
         image:SivaNadi
     },
     {
-        title:"Agasthiya Nadi",
+        title:"AGASTHIYA NADI",
         image:AgasthiyaNadi
     },
     {
-        title:"Kowshika Nadi",
+        title:"KOWSHIKA NADI",
         image:KowshikaNadi
     },
     {
-        title:"Bramma Nadi",
+        title:"BRAHMA NADI",
         image:BrammaNadi
     },
     {
-        title:"Nandhi Nadi",
+        title:"NANDHI NADI",
         image:NandhiNadi
     },
     {
-        title:"Thirumoolar Nadi",
+        title:"THIRUMOOLAR NADI",
         image:ThirumoolarNadi
     },
     {
-        title:"Vashishta Maharishi Nadi",
+        title:"VASHISHTA MAHARISHI NADI",
         image:VashishtaMaharishiNadi
     },
     {
-        title:"Maharishi Bhrigu Nadi",
+        title:"MAHARISHI BHRIGU NADI",
         image:MaharishiBhriguNadi
     },
 ]

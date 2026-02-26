@@ -1,6 +1,6 @@
 .main {
   padding: 80px 20px;
-  background: #f4efe6;
+  /* background: #f4efe6; */
 }
 
 .head {
@@ -37,7 +37,7 @@
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -94,6 +94,7 @@
 @media (max-width: 480px) {
   .servicesGrid {
     grid-template-columns: 1fr;
+      /* grid-template-columns: repeat(2, 1fr); */
     justify-items: center;
   }
 

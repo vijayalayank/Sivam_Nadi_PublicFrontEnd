@@ -2,17 +2,18 @@ import HomeAbout from "../../components/HomeComponents/HomeAbout/HomeAbout";
 import WelcomeComponent from "../../components/HomeComponents/Welcome/Welcome";
 import HistoryComponent from  "../../components/HomeComponents/HistoryComponent/HistoryComponent";
 import DetailsComponents from "../../components/HomeComponents/DetailsComponents/DetailsComponents"
-import Footer from "../../components/Shared/Footer/Footer";
+import HomeSection from "../../components/HomeComponents/SlicderComponent/SlicderComponent";
+import style from "./Home.module.css";
 
 const HomeIntagaration = () => {
 
     return (
-        <div>
+        <div className={style.outerContainer}>
+            <HomeSection />
             <HomeAbout />
             <WelcomeComponent />
             <HistoryComponent/>
             <DetailsComponents/>
-            <Footer />
         </div>
     )
 }

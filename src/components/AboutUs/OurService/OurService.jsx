@@ -4,9 +4,10 @@ import GoldenHeader from "../../GoldenHeader/GoldenHeader"
 export default function OurService({Ourservice}){
     return(
     <>
+    <GoldenHeader heading={"Our Services"}/>
         <div className={style.main}>
   
-  <GoldenHeader heading={"Our Services"}/>
+  
 
   <div className={style.servicesGrid}>
     {Ourservice.map((service, index) => (

@@ -3,6 +3,7 @@ import Gallary from "../pages/Gallery/Gallery"
 import About_Us from "../pages/About_Us/About_Us";
 import HomeIntagaration from "../pages/Home/Home";
 import Payment from "../pages/Payment/Payment";
+import VisitUs from "../pages/VisitUs/VisitUs";
 
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ export default function Route_path (){
             <Route path='/Gallery' element={<Gallary />} />
             <Route path='/about_us' element={<About_Us/>}/>
             <Route path="/payment" element={<Payment/>} />
+            <Route path="/visit_us" element={<VisitUs/>} />
           </Routes>
      
       </BrowserRouter>

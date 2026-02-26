@@ -1,8 +1,9 @@
 .seperationContainer{
     display:flex;
     width:100%;
-    border:1px solid black;
+    /* border-Top:1px solid black; */
     padding:1.5em 0em;
+   background: linear-gradient(186deg, rgba(240, 247, 193, 1) 1%, rgba(240, 219, 156, 1) 34%, rgba(255, 207, 15, 0.91) 100%);
 }
 
 .box1{
@@ -21,7 +22,7 @@
 }
 
 .qoute{
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 
 .written{
@@ -41,7 +42,13 @@
 
 .Image{
     width: 60%;
-    padding:10em;
-    border:1px solid;
+    height: 80%;
     border-radius: 10px;
+}
+
+.Image > img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    margin: 0%;
 }
