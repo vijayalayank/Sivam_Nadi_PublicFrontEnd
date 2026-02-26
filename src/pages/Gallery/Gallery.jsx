@@ -22,7 +22,7 @@ function Gallary() {
 
    
 <ImageHeroSection
-        image="../../public/assert/images/gallery/GalleryHeroImage.png"
+        image="../../public/assert/images/Gallery/galleryHeroImage.png"
         title="Gallery"
         subtitle="Sacred moments and spiritual experiences"
 />
