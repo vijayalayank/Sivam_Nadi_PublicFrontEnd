@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Chapters.module.css";
 
-import Chapter from "../../Components/Chapter/Chapter";
+import Chapter from "../../components/Chapter/Chapter";
 import ImageHeroSection from "../../components/Shared/ImageHeroSection/ImageHeroSection";
 
 function Chapters() {
