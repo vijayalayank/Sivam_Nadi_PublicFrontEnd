@@ -1,7 +1,8 @@
 import ImageHeroSection from "../../components/Shared/ImageHeroSection/ImageHeroSection";
 import GalleryImages from "../../components/GalleryImages/GalleryImages";
-
+import { useState,useEffect } from "react";
 import styles from "./Gallery.module.css"
+import axios from "axios";
 
 function Gallary() {
 
