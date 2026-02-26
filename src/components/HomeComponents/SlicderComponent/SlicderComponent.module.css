@@ -74,6 +74,12 @@
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  transition: all .3s ease;
+}
+
+.callBtn:hover{
+  box-shadow: .5em .5em .8em rgba(0, 128, 0, 0.199);
+  transform: translateY(-5px);
 }
 
 .appointBtn {
@@ -82,14 +88,28 @@
   background: #f1cd74;
   border-radius: 6px;
   cursor: pointer;
+   transition: all .3s ease;
 }
 
+.appointBtn:hover{
+  box-shadow: .5em .5em .8em #08080860;
+  transform: translateY(-5px);
+}
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
     align-items: center;
+    padding: 1em  ;
+  }
+
+  .mainImage{
+    height:13em;
+  }
+
+  .sideImage{
+    height:15em;
   }
 
   .leftSection,
@@ -99,6 +119,7 @@
 
   .leftSection {
     justify-content: center;
+    gap:.2em
   }
 
   .buttonContainer {

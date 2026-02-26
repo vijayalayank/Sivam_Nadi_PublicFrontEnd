@@ -38,6 +38,7 @@
     display: flex;
     flex-direction: column;
     width:60%;
+    padding:0em 1em;
 }
 
 .field{
@@ -86,4 +87,120 @@
 
 .option p{
     margin:1em 0em;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* -------- Large Screens (1440px+) -------- */
+@media (min-width: 1440px) {
+    .outerBlock {
+        width: 100%;
+        margin: 0 ;
+        padding-left: 0;
+    }
+}
+
+
+/* -------- Tablet (769px – 1024px) -------- */
+@media (max-width: 1024px) {
+
+    .outerBlock {
+        flex-direction: column;
+        padding: 2em 0em 0em 1em;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    
+    .Title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .para p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Title2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .option p{
+        display: flex;
+        justify-content: center;
+    }
+    .form {
+        width: 80%;
+    }
+}
+
+
+/* -------- Mobile (400px – 768px) -------- */
+@media (max-width: 768px) {
+
+    .Title h2 {
+        font-size: 1.2rem;
+    }
+
+    .Title2 h2 {
+        font-size: 1rem;
+    }
+
+    .para p {
+        font-size: 0.95rem;
+    }
+
+    .form {
+        width: 100%;
+        padding:0em .5em;
+    }
+
+    .field {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .option p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* -------- Small Mobile (Below 400px) -------- */
+@media (max-width: 399px) {
+
+    .Title h2 {
+        font-size: 1.05rem;
+    }
+
+    .Title2 h2 {
+        font-size: 0.9rem;
+    }
+
+    .para p {
+        font-size: 0.85rem;
+    }
+
+    .field {
+        font-size: 0.85rem;
+        padding: 0.4em;
+    }
+
+    .button {
+        font-size: 0.9rem;
+    }
+
 }

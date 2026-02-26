@@ -24,7 +24,7 @@ const ScrollerComponent = () => {
 
   return (
     <div className={style.continer}>
-      <Marquee speed={150} direction="right">
+      <Marquee speed={window.innerWidth < 768 ? 80 : 150} direction="right">
         <h1 className={style.Title}>
           {value || "Loading announcement..."}
         </h1>

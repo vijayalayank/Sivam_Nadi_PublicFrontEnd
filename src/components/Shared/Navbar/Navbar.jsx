@@ -5,46 +5,48 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <>
+    
     <nav className={styles.navbar}>
 
       {/* TOP SECTION */}
       <div className={styles.topBar}>
         
         {/* Logo */}
-        <div className={styles.logoSection}>
-          <img
-            src="./public/imageFolder/Home/Logo.png"
-            alt="Logo"
-            className={styles.logo}
-          />
-        </div>
+        <a href="/">
+          <div className={styles.logoSection}>
+            <img
+              src="./public/imageFolder/Home/Logo.png"
+              alt="Logo"
+              className={styles.logo}
+            />
+          </div>
+        </a>
 
         {/* Appointment Button */}
-        <button className={styles.appointmentBtn}>
-          Appointment
-        </button>
+        <a href="/appointment_form">
+          <button className={styles.appointmentBtn} >
+            Appointment
+          </button>
+        </a>
 
-        <div className={styles.contactText}>
-            <img src="./public/ImageFolder/Home/Phone_Logo.png" alt="" />
-            <p>+91 9999999999</p>
-            {/* <p>9999999999</p> */}
-        </div>
+        <a href="tel:8838771582">
 
-        <div className={styles.contactText}>
-            <img src="./public/ImageFolder/Home/whatsapp.png" alt="" />
-            <p>+91 9999999999</p>
-            {/* <p>9999999999</p> */}
-        </div>
+          <div className={styles.contactText}>
+              <img src="./public/ImageFolder/Home/Phone_Logo.png" alt="" />
+              <p>+91 9999999999</p>
+          </div>
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=917598004142&text=Naadi_Astrology">
+
+          <div className={styles.contactText}>
+              <img src="./public/ImageFolder/Home/whatsapp.png" alt="" />
+              <p>+91 9999999999</p>
+          </div>
+        </a>
         {/* Contact + Language */}
-        <div className={styles.rightSection}>
-
-          <select className={styles.languageSelect}>
-            <option>Select Language</option>
-            <option>English</option>
-            <option>Tamil</option>
-            <option>Hindi</option>
-          </select>
-        </div>
+        
 
         {/* Hamburger */}
         <div 
@@ -61,12 +63,43 @@ const Navbar = () => {
         <a href="/about_us">About Nadi Astro</a>
         <a href="/Chapters">Chapter List</a>
         <a href="/payment">Payment</a>
-        <a href="#">Pooja Remedies</a>
+        <a href="/pooja-remedy">Pooja Remedies</a>
         <a href="/Gallery">Gallery</a>
         <a href="/visit_us">Visit Us</a>
       </div>
 
     </nav>
+
+    <div className={styles.forMobile}>
+      <a href="/appointment_form">
+          <button className={styles.appointmentBtn1} >
+            Appointment
+          </button>
+        </a>
+        
+        {/* <div className={styles.line}></div> */}
+
+        <a href="tel:8838771582">
+
+          <div className={styles.contactText1}>
+              <img src="./public/ImageFolder/Home/Phone_Logo.png" alt="" />
+              <p>+91 9999999999</p>
+          </div>
+        </a>
+
+        {/* <div className={styles.line}></div> */}
+
+        <a href="https://api.whatsapp.com/send?phone=917598004142&text=Naadi_Astrology">
+
+          <div className={styles.contactText1}>
+              <img src="./public/ImageFolder/Home/whatsapp.png" alt="" />
+              <p>+91 9999999999</p>
+          </div>
+        </a>
+
+        {/* <div className={styles.line}></div> */}
+    </div>
+    </>
   );
 };
 

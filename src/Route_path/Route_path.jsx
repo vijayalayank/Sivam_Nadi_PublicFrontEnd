@@ -6,6 +6,7 @@ import Payment from "../pages/Payment/Payment";
 import VisitUs from "../pages/VisitUs/VisitUs";
 import PoojaRemedy from "../pages/PoojaRemedy/PoojaRemedy";
 import NotFound from "../pages/NotFound/NotFound";
+import AstrologyForm from "../pages/FormPage/FormPage"
 
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 
@@ -21,8 +22,9 @@ export default function Route_path (){
             <Route path='/about_us' element={<About_Us/>}/>
             <Route path="/payment" element={<Payment/>} />
             <Route path="/visit_us" element={<VisitUs/>} />
-             <Route path="/pooja-remedy" element={<PoojaRemedy/>} />
-             <Route path="*" element={<NotFound/>}/>
+            <Route path="/pooja-remedy" element={<PoojaRemedy/>} />
+            <Route path="/appointment_form" element={<AstrologyForm />} />
+            <Route path="*" element={<NotFound/>}/>
           </Routes>
      
       </BrowserRouter>

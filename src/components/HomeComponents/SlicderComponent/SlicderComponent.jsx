@@ -78,8 +78,13 @@ const HomeSection = () => {
         />
 
         <div className={styles.buttonContainer}>
-          <button className={styles.callBtn}>Call Us</button>
-          <button className={styles.appointBtn}>Appointment</button>
+          <a href="tel:8838771582">
+              <button className={styles.callBtn}>Call Us</button>
+          </a>
+
+          <a href="/appointment_form">
+              <button className={styles.appointBtn}>Appointment</button>
+          </a>
         </div>
       </div>
     </div>

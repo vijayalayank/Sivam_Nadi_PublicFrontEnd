@@ -43,15 +43,108 @@
 }
 
 
-.Image{
+.Image {
     width: 60%;
-    height: 80%;
+    aspect-ratio: 4 / 5;
     border-radius: 10px;
+    overflow: hidden;
 }
 
-.Image > img{
-    width:100%;
-    height:100%;
-    border-radius: 10px;
-    margin: 0%;
+.Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* -------- Large Screens (1440px+) -------- */
+@media (min-width: 1440px) {
+    .seperationContainer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .qoute{
+        font-size: medium;
+    }
+
+    .written{
+        font-size: small;
+    }
+
+}
+
+
+/* -------- Tablet (769px – 1024px) -------- */
+@media (max-width: 750px) {
+
+    .seperationContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 1em;
+        text-align: center;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 90%;
+        margin-bottom: 1.5em;
+    }
+
+    .Image {
+        width: 80%;
+        height: auto;
+    }
+
+    .Image img {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .qoute {
+        font-size: 1.4em;
+    }
+
+    .written {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+
+/* -------- Mobile (400px – 768px) -------- */
+@media (max-width: 768px) {
+
+    .qoute {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    .written {
+        font-size: 1.05em;
+    }
+
+    .Image {
+        width: 100%;
+    }
+}
+
+
+/* -------- Small Mobile (Below 400px) -------- */
+@media (max-width: 399px) {
+
+    .qoute {
+        font-size: 1.05em;
+    }
+
+    .written {
+        font-size: 0.95em;
+    }
 }

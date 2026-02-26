@@ -36,4 +36,82 @@
 .box1:hover{
     box-shadow: .5em .5em 1em rgba(24, 23, 22, 0.493);
     transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* -------- Large Screens (1440px+) -------- */
+@media (min-width: 1440px) {
+    .outerBlock {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+
+/* -------- Tablet (769px – 1024px) -------- */
+@media (max-width: 1024px) {
+
+    .outerBlock {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        padding: 2em 1em;
+    }
+
+    .box1 img {
+        width: 11em;
+        height: 11em;
+    }
+
+    .Title {
+        font-size: 1.1em;
+    }
+}
+
+
+/* -------- Mobile (400px – 768px) -------- */
+@media (max-width: 768px) {
+
+    .outerBlock {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+
+    .box1 {
+        width: 95%;
+    }
+
+    .box1 img {
+        width: 9em;
+        height: 9em;
+    }
+
+    .Title {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .Description {
+        padding: 0em 1em 1em 1em;
+        font-size: 0.95em;
+    }
+}
+
+
+/* -------- Small Mobile (Below 400px) -------- */
+@media (max-width: 399px) {
+
+    .box1 img {
+        width: 7.5em;
+        height: 7.5em;
+    }
+
+    .Title {
+        font-size: 0.95em;
+    }
+
+    .Description {
+        font-size: 0.9em;
+    }
 }

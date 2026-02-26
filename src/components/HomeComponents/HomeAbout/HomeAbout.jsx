@@ -47,8 +47,12 @@ const HomeAbout = () => {
                     />
 
                     <div className={style.buttonContiner}>
-                        <button className={style.Call}>Call Us</button>
-                        <button className={style.Appoint}>Appointment</button>
+                        <a href="tel:8838771582">
+                            <button className={style.Call}>Call Us</button>
+                        </a>
+                        <a href="/appointment_form">
+                            <button className={style.Appoint}>Appointment</button>
+                        </a>
                     </div>
                 </div>
 

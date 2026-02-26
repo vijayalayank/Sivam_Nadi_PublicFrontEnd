@@ -166,6 +166,10 @@
     background-color: white;
     padding-bottom: 0px;
   }
+
+  .Title{
+    font-size: 1em;
+  }
 }
 
 
@@ -209,6 +213,10 @@
     background-color: white;
     padding-bottom: 0px;
   }
+
+  .Title{
+    font-size: 1em;
+  }
 }
 
 
@@ -231,6 +239,10 @@
   .graps img{
     width: 100px;
     height: 100px;
+  }
+
+  .Title{
+    font-size: 1em;
   }
 }
 

@@ -1,11 +1,16 @@
+/* ================= NAVBAR BASE ================= */
+
 .navbar {
   width: 100%;
   border-bottom: 1px solid #ccc;
-background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69, 0.64) 100%);
-
+  background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69, 0.64) 100%);
 }
 
 
+a {
+  text-decoration: none;
+  color:#000;
+}
 /* ================= TOP BAR ================= */
 
 .topBar {
@@ -13,79 +18,62 @@ background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* Logo */
 .logoSection {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  width:18%;
+  width: 180px;
 }
 
 .logo {
   width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-/* Appointment */
+/* Appointment Button */
 .appointmentBtn {
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   background: white;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
   border: none;
+  transition: 0.3s ease;
 }
 
-/* Right Section */
-.rightSection {
+.appointmentBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* Contact */
+.contactText {
+  background-color: #ffffff;
+  padding: 0.5em 1em;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  transition: 0.3s ease;
+  white-space: nowrap;
 }
 
-.contactText{
-    background-color: #FFFFFF;
-    padding:.5em 1em;
-    border-radius: 10px; 
-    display: flex;
-    transition: all 0.3s ease;
-
+.contactText img {
+  width: 18px;
+  margin-right: 0.5rem;
 }
 
 .contactText p {
   margin: 0;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  color:#000;
-  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  color: #000;
 }
 
-.contactText:hover{
-    /* background-color: #03f036;
-     */
-   
-    box-shadow: .2em .2em .2em #03f036;
-    
-    cursor:pointer;
-}
-
-.contactText:hover p{
-    font-size: 1.01em;
-    color: #03f036;
-}
-
-.contactText img{
-    width: 20px;
-    margin-right: 0.5rem;
-}
-
-.languageSelect {
-  padding: 0.3rem 0.5rem;
+.contactText:hover {
+  box-shadow: 0 0 8px #03f036;
+  cursor: pointer;
 }
 
 /* Hamburger */
@@ -103,6 +91,7 @@ background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69
   gap: 2rem;
   padding: 0.8rem 0;
   background: #033a8b;
+  transition: all 0.3s ease;
 }
 
 .menuBar a {
@@ -110,24 +99,78 @@ background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .menuBar a:hover {
   background: #c89b3c;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================================================= */
+/* ================= RESPONSIVE ==================== */
+/* ================================================= */
 
-@media (max-width: 1024px) {
+/* ---------- Large Desktop (1440px+) ---------- */
+@media (min-width: 1440px) {
+  .topBar {
+    padding: 1.2rem 5rem;
+  }
 
-  .rightSection {
+  .forMobile{
     display: none;
   }
+}
+
+/* ---------- Desktop (1025px–1439px) ---------- */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .topBar {
+    padding: 1rem 3rem;
+  }
+
+  .forMobile{
+    display: none;
+  }
+}
+
+/* ---------- Tablet (769px–1024px) ---------- */
+@media (max-width: 1024px) {
 
   .appointmentBtn {
     display: none;
   }
+
+  .appointmentBtn1{
+    padding: 0.6rem 2rem;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s ease;
+    border: #000 1px solid;
+    margin:3px 0px;
+  }
+
+  .contactText {
+    display: none;
+  }
+
+  .contactText1{
+    background-color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    white-space: nowrap;
+    border: #000 1px solid;
+    margin:3px 0px;
+  }
+
+  .contactText1 img {
+    width: 18px;
+    margin-right: 0.5rem;
+}
 
   .hamburger {
     display: block;
@@ -137,23 +180,83 @@ background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69
     display: none;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .menuBar.active {
     display: flex;
   }
+
+  .forMobile{
+    display: flex;
+    padding:.7em 0em;
+    justify-content: space-around;
+  }
 }
 
-@media (max-width: 600px) {
+
+/* ---------- Mobile (375px–768px) ---------- */
+@media (max-width: 768px) {
+  
+  .appointmentBtn1{
+    font-size: smaller;
+  }
+
+  .contactText1{
+    font-size: smaller;
+  }
+
+  .contactText1 img{
+    width:1em;
+    height:1em;
+  }
+
+  .forMobile{
+    display: flex;
+    padding:.7em 0em;
+    justify-content: space-around;
+    /* flex-direction:column; */
+    align-items: center;
+  }
+
   .topBar {
     padding: 1rem;
   }
 
-  .logoSection h3 {
-    font-size: 1rem;
+  .logoSection {
+    width: 140px;
   }
 
-  .logoSection p {
-    font-size: 0.7rem;
+  .hamburger {
+    font-size: 1.6rem;
+  }
+
+  .menuBar a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 500px) {
+    .forMobile{
+      flex-direction:column;
+    }
+}
+
+/* ---------- Small Mobile (320px–374px) ---------- */
+@media (max-width: 374px) {
+
+  .logoSection {
+    width: 120px;
+  }
+
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+  .menuBar a {
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 }

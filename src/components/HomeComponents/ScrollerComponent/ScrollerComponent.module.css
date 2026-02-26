@@ -1,16 +1,64 @@
-.continer{
-    width:100%;
-    display: flex;
-    text-align: center;
-    background-color: brown;
+.continer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #5b1c1c, #8b0000);
+  overflow: hidden;
+  min-height: 50px;
+  padding: 0 10px;
 }
 
-.Title{
-    padding: .2em 0em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:azure;
-    text-align: center;
-    width:100%; 
+/* Title */
+.Title {
+  color: azure;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Small Mobile (320px–374px) */
+@media (max-width: 374px) {
+  .continer {
+    min-height: 40px;
+  }
+
+  .Title {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile (375px–768px) */
+@media (min-width: 375px) and (max-width: 768px) {
+  .continer {
+    min-height: 45px;
+  }
+
+  .Title {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop (1025px–1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .Title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large Screens (1440px+) */
+@media (min-width: 1440px) {
+  .Title {
+    font-size: 1.5rem;
+  }
 }

@@ -13,6 +13,10 @@
     color:#fff;
 }
 
+.Title h1{
+    text-align: center;
+}
+
 
 .outerContainer{
     width: 100%;
@@ -77,3 +81,90 @@
 }
 
 
+/* ================= RESPONSIVE ================= */
+
+/* -------- Large Screens (1440px+) -------- */
+@media (min-width: 1440px) {
+    .welcomeContainer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+
+/* -------- Tablets (769px – 1024px) -------- */
+@media (max-width: 1000px) {
+
+    .welcomeContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 1em;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 90%;
+    }
+
+    .box1,
+    .box3 {
+        margin-bottom: 1.5em;
+    }
+
+    .Image {
+        height: auto;
+        width: 100%;
+    }
+
+    .Image img {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .para {
+        font-size: 1em;
+    }
+}
+
+
+/* -------- Mobile (400px – 768px) -------- */
+@media (max-width: 768px) {
+
+    .Title {
+        font-size: 1.1rem;
+        padding: 0.8em;
+        text-align: center;
+    }
+
+    .WelTitle h2 {
+        font-size: 1.2rem;
+    }
+
+    .para {
+        font-size: 0.95em;
+        padding: 0em 0.5em;
+    }
+
+    .Image {
+        width: 100%;
+    }
+}
+
+
+/* -------- Small Mobile (Below 400px) -------- */
+@media (max-width: 399px) {
+
+    .Title {
+        font-size: 1rem;
+    }
+
+    .WelTitle h2 {
+        font-size: 1.05rem;
+    }
+
+    .para {
+        font-size: 0.9em;
+    }
+
+}
