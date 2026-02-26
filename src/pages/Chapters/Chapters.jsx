@@ -9,7 +9,7 @@ function Chapters() {
     <div className={styles.page}>
 
       <ImageHeroSection
-        image="/assert/images/chapters/chapterHeroImage.png"
+        image="/assert/images/chapters/chapterHeroImage3.png"
       />
 
       <section className={styles.chapterSection}>
