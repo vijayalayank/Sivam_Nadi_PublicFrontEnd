@@ -1,6 +1,6 @@
 .outerContainer{
     width:100%;
-    background-color: #FAF7F2;
+    /* background-color: #FAF7F2; */
 }
 
 
@@ -9,8 +9,8 @@
     justify-content: center;
     font-size: 1.4rem;
     padding :1em 0em;
-    background: linear-gradient(to right,#c89b3c, #f5d27a );
-    color:#584002
+    background-color: brown;
+    color:#fff;
 }
 
 

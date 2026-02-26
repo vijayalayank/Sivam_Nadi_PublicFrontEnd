@@ -21,7 +21,6 @@
 
 .CardContent{
     display: flex;
-    /* border:  1px solid #000; */
     justify-content: space-around;
     padding :1em 0em;
 }
@@ -37,30 +36,47 @@
     border-radius: 10px 10px 0px 0px;
 }
 
+
+
 .buttonContiner{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding : 1em;
-    background-color: #eee8d9;
+    background-color: #033A8B;
     border-radius: 0px 0px 10px 10px;
+    gap:1em;
 }
 
 .Call{
-    padding: .5em 1.3em;
-    font-size: 1.2em;
+    padding: .5em 1.5em;
+    font-size: .9em;
     border:none;
-    border-radius: 10px;
-    background-color: rgb(5, 207, 39);
+    border-radius: 5px;
+    background-color: #008000;
     color:aliceblue;
+    transition: all .3s ease;
 }
 
+
+
 .Appoint{
-    padding:.5em 1.3em;
-    font-size: 1.2em;
+    padding: .5em 1.3em;
+    font-size: .9em;
     border:none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color:#F1CD74 ;
+    transition: all .3s ease;
+}
+
+.Call:hover{
+    transform: translateY(-6px);
+    box-shadow: .2em .2em 1em #1d1c1b;
+}
+
+.Appoint:hover{
+    transform: translateY(-6px);
+    box-shadow: .2em .2em 1em #1d1c1b;
 }
 
 .CardContiner{
@@ -73,14 +89,20 @@
 }
 
 .Card {
-    height: 17em;
+    height: 16.5em;
     width:30%;
     color : rgb(155, 1, 1);
     border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.Card:hover{
+    box-shadow: .5em .5em 1em #c89b3c;
+    cursor:pointer;
+    transform: translateY(-10px);
 }
 
 .imageContiner{
-    border-bottom: 1px solid #000;
     width:100%;
     height:13em;
 }
@@ -99,7 +121,8 @@
     align-items: center;
     font-size: 1.5em;
     border-radius: 0px 0px 10px 10px;
-    background: linear-gradient(186deg, rgba(240, 247, 193, 1) 1%, rgba(240, 219, 156, 1) 34%, rgba(255, 207, 15, 0.91) 100%);
+    background-color: #f1cd74;
+    color:#5a0101;
 }
 
 

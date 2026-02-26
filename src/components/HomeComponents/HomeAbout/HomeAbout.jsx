@@ -5,27 +5,27 @@ const HomeAbout = () => {
     const data = [
         {
             title: "Nadi Astrology",
-            image: "./public/imageFolder/Home/Home_About.jpeg"
+            image: "./public/imageFolder/Home/aboutRight1.jpeg"
         },
         {
-            title: "Nadi Astrology",
-            image: "./public/imageFolder/Home/Home_About.jpeg"
+            title: "Our Heritage",
+            image: "./public/imageFolder/Home/aboutRight2.jpeg"
         },
         {
-            title: "Nadi Astrology",
-            image: "./public/imageFolder/Home/Home_About.jpeg"
+            title: "History of Nadi",
+            image: "./public/imageFolder/Home/aboutRight3.jpeg"
         },
         {
-            title: "Nadi Astrology",
-            image: "./public/imageFolder/Home/Home_About.jpeg"
+            title: "Nadi Procedure",
+            image: "./public/imageFolder/Home/aboutRight4.jpeg"
         },
         {
-            title: "Nadi Astrology",
-            image: "./public/imageFolder/Home/Home_About.jpeg"
+            title: "Chapters List",
+            image: "./public/imageFolder/Home/aboutRight5.jpeg"
         },
         {
-            title: "Nadi Astrology",
-            image: "./public/imageFolder/Home/Home_About.jpeg"
+            title: "Online Predictions",
+            image: "./public/imageFolder/Home/aboutRight6.jpeg"
         }
     ];
 

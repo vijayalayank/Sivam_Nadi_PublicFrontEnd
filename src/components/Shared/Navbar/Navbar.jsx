@@ -24,12 +24,19 @@ const Navbar = () => {
           Appointment
         </button>
 
+        <div className={styles.contactText}>
+            <img src="./public/ImageFolder/Home/Phone_Logo.png" alt="" />
+            <p>+91 9999999999</p>
+            {/* <p>9999999999</p> */}
+        </div>
+
+        <div className={styles.contactText}>
+            <img src="./public/ImageFolder/Home/whatsapp.png" alt="" />
+            <p>+91 9999999999</p>
+            {/* <p>9999999999</p> */}
+        </div>
         {/* Contact + Language */}
         <div className={styles.rightSection}>
-          <div className={styles.contactText}>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
 
           <select className={styles.languageSelect}>
             <option>Select Language</option>

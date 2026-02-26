@@ -1,8 +1,10 @@
 .navbar {
   width: 100%;
   border-bottom: 1px solid #ccc;
-  background: #f7f7f7;
+background: linear-gradient(90deg, rgba(253, 29, 29, 0.69) 0%, rgba(252, 176, 69, 0.64) 100%);
+
 }
+
 
 /* ================= TOP BAR ================= */
 
@@ -24,17 +26,18 @@
 
 .logo {
   width: 100%;
+  border-radius: 10px;
   object-fit: cover;
 }
 
 /* Appointment */
 .appointmentBtn {
   padding: 0.5rem 1.5rem;
-  border: 2px solid #000;
   background: white;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
+  border: none;
 }
 
 /* Right Section */
@@ -44,9 +47,41 @@
   gap: 2rem;
 }
 
+.contactText{
+    background-color: #FFFFFF;
+    padding:.5em 1em;
+    border-radius: 10px; 
+    display: flex;
+    transition: all 0.3s ease;
+
+}
+
 .contactText p {
   margin: 0;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  color:#000;
+  transition: all 0.3s ease;
+}
+
+.contactText:hover{
+    /* background-color: #03f036;
+     */
+   
+    box-shadow: .2em .2em .2em #03f036;
+    
+    cursor:pointer;
+}
+
+.contactText:hover p{
+    font-size: 1.01em;
+    color: #03f036;
+}
+
+.contactText img{
+    width: 20px;
+    margin-right: 0.5rem;
 }
 
 .languageSelect {
@@ -67,19 +102,19 @@
   justify-content: center;
   gap: 2rem;
   padding: 0.8rem 0;
-  background: #e0e0e0;
+  background: #033a8b;
 }
 
 .menuBar a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .menuBar a:hover {
   background: #c89b3c;
-  color: white;
 }
 
 /* ================= RESPONSIVE ================= */

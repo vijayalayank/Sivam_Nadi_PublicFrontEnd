@@ -7,7 +7,7 @@ const WelcomeComponent = () => {
         <>
             <div className={style.outerContainer}>
                 <div className={style.Title}>
-                    <h1>The original heriditary nadi family of tharagambadi</h1>
+                    <h1>The Original Heriditary Nadi Family Of Tharagambadi</h1>
                 </div>
 
                 <div className={style.welcomeContainer}>

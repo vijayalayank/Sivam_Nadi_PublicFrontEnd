@@ -1,46 +1,60 @@
 import styles from "./SlicderComponent.module.css";
 import { useState } from "react";
 
-const content = [{
+const content = [
+  {
     image: "./public/imageFolder/Home/LeftImage1.png",
-    description: "Nadi astrology is specifically designed to guide individuals in pooja and pariharam."
+    description:
+      "Nadi astrology is specifically designed to guide individuals in pooja and pariharam."
   },
   {
     image: "./public/imageFolder/Home/LeftImage2.jpeg",
-    description: "Yes, Nadi astrology is believed to predict the current life in detail, including past, present, and future, based on ancient palm-leaf manuscripts."
+    description:
+      "Yes, Nadi astrology predicts past, present, and future using ancient palm-leaf manuscripts."
   },
   {
     image: "./public/imageFolder/Home/LeftImage3.png",
-    description: "Yes, according to ancient belief, Nadi Astrology can predict your future based on karmic records written by sages."
+    description:
+      "According to belief, Nadi Astrology predicts your future based on karmic records."
   },
   {
     image: "./public/imageFolder/Home/LeftImage4.jpeg",
-    description: " Nadi helps you understand your Karma, remove your sins, & makes your future favorable to you."
+    description:
+      "Nadi helps you understand karma and makes your future favorable."
   }
 ];
 
-
 const HomeSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  const changeSlide = (newIndex) => {
+    setFade(false);
+
+    setTimeout(() => {
+      setCurrentIndex(newIndex);
+      setFade(true);
+    }, 200);
+  };
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % content.length);
+    changeSlide((currentIndex + 1) % content.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? content.length - 1 : prev - 1
+    changeSlide(
+      currentIndex === 0 ? content.length - 1 : currentIndex - 1
     );
   };
 
   return (
     <div className={styles.container}>
-
-      {/* LEFT SIDE */}
       <div className={styles.leftSection}>
-        <button className={styles.arrow} onClick={prevSlide}>❮</button>
+        <button className={styles.arrow} onClick={prevSlide}>
+          ❮
+        </button>
 
-        <div className={styles.imageWrapper}>
+        <div className={`${styles.imageWrapper} ${fade ? styles.fadeIn : styles.fadeOut}`}>
           <img
             src={content[currentIndex].image}
             alt="Nadi Astrology"
@@ -51,10 +65,11 @@ const HomeSection = () => {
           </p>
         </div>
 
-        <button className={styles.arrow} onClick={nextSlide}>❯</button>
+        <button className={styles.arrow} onClick={nextSlide}>
+          ❯
+        </button>
       </div>
 
-      {/* RIGHT SIDE */}
       <div className={styles.rightSection}>
         <img
           src="./public/imageFolder/Home/rightImage1.png"
@@ -67,7 +82,6 @@ const HomeSection = () => {
           <button className={styles.appointBtn}>Appointment</button>
         </div>
       </div>
-
     </div>
   );
 };
