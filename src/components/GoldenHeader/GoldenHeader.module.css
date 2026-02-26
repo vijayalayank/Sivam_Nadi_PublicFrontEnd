@@ -1,30 +1,73 @@
+/* ============================= */
+/* Mobile First (Default) */
+/* ============================= */
+
 .heading {
   text-align: center;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ccc;
-  margin: 2rem 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 1.5rem 0;
 }
 
+/* Heading Text */
 .heading h1 {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
 
-  
+  /* Responsive typography */
+  font-size: clamp(22px, 4vw, 42px);
+
+  letter-spacing: 0.5px;
+  color: #222;
+  position: relative;
 }
 
+/* Golden underline */
 .heading h1::after {
   content: "";
   display: block;
-  width: 100px;
-  height: 4px;
+  width: 60%;
+  height: 3px;
   background: linear-gradient(to right, #c89b3c, #f5d27a);
-  margin: 15px auto 10px;
+  margin: 12px auto 0;
   border-radius: 2px;
+  transition: width 0.3s ease;
 }
 
+/* ============================= */
+/* Tablet (≥ 768px) */
+/* ============================= */
 
-/* .heading h1:hover {
- transform: scale(1.02);
-  animation: scaleIn 5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-} */
+@media (min-width: 768px) {
+  .heading {
+    margin: 2rem 0;
+  }
+
+  .heading h1::after {
+    width: 80px;
+  }
+}
+
+/* ============================= */
+/* Desktop (≥ 1024px) */
+/* ============================= */
+
+@media (min-width: 1024px) {
+  .heading h1::after {
+    width: 60%;
+    height: 4px;
+  }
+  .heading h1 {
+  display: inline-block;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+
+  /* Responsive typography */
+ 
+    font-size: 2em;
+  letter-spacing: 0.5px;
+  color: #222;
+  position: relative;
+}
+}

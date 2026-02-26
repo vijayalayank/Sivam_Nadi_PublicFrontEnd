@@ -1,17 +1,21 @@
+import s from "./HeaderComp.module.css";
 
-import s from "./HeaderComp.module.css"
+export default function HeaderComp({ headerimage }) {
 
-export default function HeaderComp({headerimage}){
+  return (
+    <div className={s.parent}>
+      <img
+        className={s.head}
+        src={headerimage.image}
+        alt="Header"
+      />
 
-    console.log(headerimage);
-    console.log(headerimage.text_color)
-    
-    return(
-        <>
-            <div className={s.parent}>
-                <img className={s.head} src={headerimage.image} alt="Header image" />
-                <h1>{headerimage.title}</h1>
-            </div>
-        </>
-    )
+      <h1
+        style={{ color: headerimage.text_color || "#ffffff" }}
+        className={s.title}
+      >
+        {headerimage.title}
+      </h1>
+    </div>
+  );
 }

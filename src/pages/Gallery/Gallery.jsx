@@ -1,11 +1,21 @@
 import ImageHeroSection from "../../components/Shared/ImageHeroSection/ImageHeroSection";
 import GalleryImages from "../../components/GalleryImages/GalleryImages";
-
-import galleryData from "../../data/galleryData";
-
+import { useState,useEffect } from "react";
 import styles from "./Gallery.module.css"
+import axios from "axios";
 
 function Gallary() {
+
+  const [images, setImages] = useState([]);
+
+  const fetchImages = async () => {
+    const res = await axios.get(`http://69.169.109.129:5000/api/gallery`);
+    setImages(res.data);
+  };
+
+  useEffect(() => {
+    fetchImages();
+  }, []);
 
   return (
     <div>
@@ -29,7 +39,7 @@ function Gallary() {
           </p>
 
 
-      <GalleryImages images={galleryData} />
+          <GalleryImages images={images} refreshGallery={fetchImages} />
 
     </div>
   );
