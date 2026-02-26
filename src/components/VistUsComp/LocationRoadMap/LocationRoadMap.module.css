@@ -38,12 +38,25 @@
 }
 
 .address{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 1rem;
     width: 40%;
     height: auto;
+    cursor: pointer;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 2px 1rem rgba(196, 0, 0, 0.488);
+    transition: transform 0.35s ease, letter-spacing 0.35s ease;
 }
+
+.address:hover{
+    transform: scale(1.02);
+  animation: scaleIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
 
 .modal {
   position: fixed;
@@ -99,11 +112,14 @@
 
   .main {
     flex-direction: column;
-    width: 90%;
+    width: 80%;
+    
   }
 
   .address {
-    width: 100%;
+    align-items: center;
+    width: 90%;
+    align-self: center;
   }
 
   .overlay {
@@ -123,9 +139,14 @@
     padding: 0.5rem;
   }
 
-  .address {
-    padding: 0.8rem;
+  
+     .address {
+    align-items: start;
+    width: 90%;
+    align-self: center;
+    font-size: 1em;
   }
+  
 
   .modalContent {
     max-width: 95%;

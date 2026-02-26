@@ -30,7 +30,18 @@ export default function LocationRoadMap(){
             <GoldenHeader heading={location_road_map.title}/>
             <div className={style.contain}>
                 <div className={style.main}>
-                <div className={style.address}>Address</div>
+                <div className={style.address}>
+                  <h2>Location</h2>
+                  <p>GURUJI M ARUL SIVAM SIVAM NADI ASTROLOGY CENTER</p>
+
+                 <p> 2/59B Main Road, Valathanpattinam, Kidaran Kondan Post,</p>
+
+                  <p>Mayiladuthurai to Poombuhar Main Road,</p>
+
+                  <p>Tharangambadi TK - 609 304,</p>
+
+                  <p>Tamilnadu, South India.</p>
+                </div>
                 <div className={style.overlay}><img src={location_road_map.image} alt="roadmap" onClick={()=>setOpen(true)} /></div>
             </div>
             {open && (
