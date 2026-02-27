@@ -33,7 +33,7 @@ function GalleryImages({ images, refreshGallery }) {
           <div key={img.id} className={styles.imageCard}>
             {/* ⭐ Delete button */}
             <img
-              src={`http://69.169.109.129:5000/api/gallery/${img.id}`}
+              src={`https://api.sivamnadiastrology.com/api/gallery/${img.id}`}
               alt={`gallery-${img.id}`}
               loading="lazy"
               crossOrigin="anonymous"
