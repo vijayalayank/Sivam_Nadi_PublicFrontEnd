@@ -3,22 +3,22 @@ import { useState } from "react";
 
 const content = [
   {
-    image: "./public/imageFolder/Home/LeftImage1.png",
+    image: "/ImageFolder/Home/LeftImage1.png",
     description:
       "Nadi astrology is specifically designed to guide individuals in pooja and pariharam."
   },
   {
-    image: "./public/imageFolder/Home/LeftImage2.jpeg",
+    image: "/ImageFolder/Home/LeftImage2.jpeg",
     description:
       "Yes, Nadi astrology predicts past, present, and future using ancient palm-leaf manuscripts."
   },
   {
-    image: "./public/imageFolder/Home/LeftImage3.png",
+    image: "/ImageFolder/Home/LeftImage3.png",
     description:
       "According to belief, Nadi Astrology predicts your future based on karmic records."
   },
   {
-    image: "./public/imageFolder/Home/LeftImage4.jpeg",
+    image: "/ImageFolder/Home/LeftImage4.jpeg",
     description:
       "Nadi helps you understand karma and makes your future favorable."
   }

@@ -4,15 +4,15 @@ import style from "./DetailsComponents.module.css";
 const DetailsComponents = () => {
 
     const content = [
-        {   image:"./public/ImageFolder/Home/AuthenticReading.png",
+        {   image:"/ImageFolder/Home/AuthenticReading.png",
             title: "AUTHENTIC READING",
             description: "Get your Nadi reading from the original Nadi family"
         },
-        {   image:"./public/ImageFolder/Home/Languages.png",
+        {   image:"/ImageFolder/Home/Languages.png",
             title: "AVAILABLE IN MAJOR LANGUAGES",
             description: "தமிழ், English, Hindi, Telugu, Kanada"
         },
-        {   image:"./public/ImageFolder/Home/TakeToUs.png",
+        {   image:"/ImageFolder/Home/TakeToUs.png",
             title: "TALK TO US",
             description: "+91 75980 04142 / 82709 94142"
         }

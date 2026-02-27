@@ -13,7 +13,7 @@ const WelcomeComponent = () => {
                 <div className={style.welcomeContainer}>
                     <div className={style.box1}>
                         <div className={style.Image}>
-                                <img src="./public/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
+                                <img src="/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@ const WelcomeComponent = () => {
 
                     <div className={style.box3}>
                         <div className={style.Image}>
-                            <img src="./public/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
+                            <img src="/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
 
                         </div>
                     </div>
