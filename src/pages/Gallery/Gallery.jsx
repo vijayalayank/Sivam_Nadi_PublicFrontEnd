@@ -9,7 +9,7 @@ function Gallary() {
   const [images, setImages] = useState([]);
 
   const fetchImages = async () => {
-    const res = await axios.get(`http://69.169.109.129:5000/api/gallery`);
+    const res = await axios.get(`https://69.169.109.129:5000/api/gallery`);
     setImages(res.data);
   };
 
@@ -22,7 +22,7 @@ function Gallary() {
 
    
 <ImageHeroSection
-        image="../../public/assert/images/Gallery/galleryHeroImage.png"
+        image="/assert/images/Gallery/galleryHeroImage.png"
         title="Gallery"
         subtitle="Sacred moments and spiritual experiences"
 />

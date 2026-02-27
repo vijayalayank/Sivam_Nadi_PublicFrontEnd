@@ -4,6 +4,8 @@ function ImageHeroSection({ image, title, subtitle }) {
   return (
     <section className={styles.hero}>
 
+      {console.log(image)}
+
       {/* Background Image */}
       <img src={image} alt={title} className={styles.background} />
 
