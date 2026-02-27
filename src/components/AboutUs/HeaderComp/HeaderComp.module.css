@@ -58,7 +58,7 @@
 /* ========================= */ /* 📱 Extra Small */ /* ========================= */
 
 @media (max-width: 376px) {
-   .parent { height: 35vh; }
+   .parent { height: 20vh; }
     .parent h1 { font-size: 22px; }
   
   }

@@ -70,23 +70,24 @@
 /* Small Mobile */
 @media (max-width: 480px) {
     .abc{
-        width: 90%;
+        width: 100%;
         flex-direction: column;
-        align-items: center;
+
+        /* align-items: center; */
         /* padding: 1rem; */
     }
     .abc .image{
-        width: 80%;
+        width: 100%;
     }
     .abc .content{
-        width: 80%;
+        width: 100%;
     }
     .header h1{
         font-size: large;
-
+      
     }
     .abc .content{
-        font-size: small;
-        text-align:left;
+        font-size: medium;
+        text-align:center;
     }
 }
