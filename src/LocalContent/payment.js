@@ -22,11 +22,11 @@ Your peace of mind matters more to us than anything else.`
 const AccountDetails = {
     title:"Bank Account Details",
     image:bankimg,
-    accountholder:["Account Holder Name : ","KUMARAGOVINDAN KALIYAMOORTHY"],
-    accountnumber:["Account Number : ", "608801514324"],
-    bankname:["Bank Name : ","ICICI BANK"],
-    accounttype:["Account Type : ","Saving"],
-    ifsccode:["IFSC CODE : ","ICIC0006088"]
+    accountholder:["Account Holder Name : ","Mr. ARUL SIVAM KN"],
+    accountnumber:["Account Number : ", "38807307821"],
+    bankname:["Bank Name : ","STATE BANK OF INDIA"],
+    accounttype:["Account Type : ","REGULAR SAVINGS BANK ACCOUNT"],
+    ifsccode:["IFSC CODE : ","SBIN0012789"]
 
 }
 
