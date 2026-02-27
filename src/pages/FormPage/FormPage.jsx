@@ -38,7 +38,7 @@ const AstrologyForm = () => {
       setLoading(true);
 
       const response = await axios.post(
-        `${domain}/api/user`,
+        `${domain}/api/users`,
         formData
       );
 
