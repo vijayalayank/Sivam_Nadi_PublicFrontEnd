@@ -4,12 +4,14 @@ import { useState,useEffect } from "react";
 import styles from "./Gallery.module.css"
 import axios from "axios";
 
+
 function Gallary() {
 
   const [images, setImages] = useState([]);
+  const domain = import.meta.env.VITE_DOMAIN;
 
   const fetchImages = async () => {
-    const res = await axios.get(`https://69.169.109.129:5000/api/gallery`);
+    const res = await axios.get(`${domain}/api/gallery`);
     setImages(res.data);
   };
 

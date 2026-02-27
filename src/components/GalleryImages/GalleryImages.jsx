@@ -4,6 +4,7 @@ import { useState } from "react";
 function GalleryImages({ images, refreshGallery }) {
   const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
+  const domain = import.meta.env.VITE_DOMAIN;
 
   const breakpointColumns = {
     default: 4,
@@ -33,7 +34,7 @@ function GalleryImages({ images, refreshGallery }) {
           <div key={img.id} className={styles.imageCard}>
             {/* ⭐ Delete button */}
             <img
-              src={`https://api.sivamnadiastrology.com/api/gallery/${img.id}`}
+              src={`${domain}/api/gallery/${img.id}`}
               alt={`gallery-${img.id}`}
               loading="lazy"
               crossOrigin="anonymous"
