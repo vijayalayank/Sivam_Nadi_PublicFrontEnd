@@ -42,7 +42,7 @@ const HomeAbout = () => {
                 {/* LEFT SIDE POSTER */}
                 <div className={style.poster}>
                     <img 
-                        src="./public/imageFolder/Home/Home_About.jpeg" 
+                        src="/ImageFolder/Home/Home_About.jpeg" 
                         alt="Nadi Astrology" 
                     />
 
