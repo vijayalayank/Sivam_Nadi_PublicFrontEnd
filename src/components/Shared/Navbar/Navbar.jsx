@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href="/">
           <div className={styles.logoSection}>
             <img
-              src="./public/imageFolder/Home/Logo.png"
+              src="/ImageFolder/Home/Logo.png"
               alt="Logo"
               className={styles.logo}
             />
@@ -33,7 +33,7 @@ const Navbar = () => {
         <a href="tel:8838771582">
 
           <div className={styles.contactText}>
-              <img src="./public/ImageFolder/Home/Phone_Logo.png" alt="" />
+              <img src="/ImageFolder/Home/Phone_Logo.png" alt="" />
               <p>+91 9999999999</p>
           </div>
         </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <a href="https://api.whatsapp.com/send?phone=917598004142&text=Naadi_Astrology">
 
           <div className={styles.contactText}>
-              <img src="./public/ImageFolder/Home/whatsapp.png" alt="" />
+              <img src="/ImageFolder/Home/whatsapp.png" alt="" />
               <p>+91 9999999999</p>
           </div>
         </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
         <a href="tel:8838771582">
 
           <div className={styles.contactText1}>
-              <img src="./public/ImageFolder/Home/Phone_Logo.png" alt="" />
+              <img src="/ImageFolder/Home/Phone_Logo.png" alt="" />
               <p>+91 9999999999</p>
           </div>
         </a>
@@ -92,7 +92,7 @@ const Navbar = () => {
         <a href="https://api.whatsapp.com/send?phone=917598004142&text=Naadi_Astrology">
 
           <div className={styles.contactText1}>
-              <img src="./public/ImageFolder/Home/whatsapp.png" alt="" />
+              <img src="/ImageFolder/Home/whatsapp.png" alt="" />
               <p>+91 9999999999</p>
           </div>
         </a>

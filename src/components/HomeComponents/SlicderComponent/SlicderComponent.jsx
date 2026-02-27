@@ -3,22 +3,22 @@ import { useState } from "react";
 
 const content = [
   {
-    image: "/ImageFolder/Home/LeftImage1.png",
+    image: "/ImageFolder/Home/leftImage1.png",
     description:
       "Nadi astrology is specifically designed to guide individuals in pooja and pariharam."
   },
   {
-    image: "/ImageFolder/Home/LeftImage2.jpeg",
+    image: "/ImageFolder/Home/leftImage2.jpeg",
     description:
       "Yes, Nadi astrology predicts past, present, and future using ancient palm-leaf manuscripts."
   },
   {
-    image: "/ImageFolder/Home/LeftImage3.png",
+    image: "/ImageFolder/Home/leftImage3.png",
     description:
       "According to belief, Nadi Astrology predicts your future based on karmic records."
   },
   {
-    image: "/ImageFolder/Home/LeftImage4.jpeg",
+    image: "/ImageFolder/Home/leftImage4.jpeg",
     description:
       "Nadi helps you understand karma and makes your future favorable."
   }
@@ -72,7 +72,7 @@ const HomeSection = () => {
 
       <div className={styles.rightSection}>
         <img
-          src="./public/imageFolder/Home/rightImage1.png"
+          src="/ImageFolder/Home/rightImage1.png"
           alt="Astrologer"
           className={styles.sideImage}
         />
