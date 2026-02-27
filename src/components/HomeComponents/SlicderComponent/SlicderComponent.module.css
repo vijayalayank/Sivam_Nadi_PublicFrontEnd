@@ -95,6 +95,19 @@
   box-shadow: .5em .5em .8em #08080860;
   transform: translateY(-5px);
 }
+
+.imageWrapper {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 1024px) {

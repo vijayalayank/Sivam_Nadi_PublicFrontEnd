@@ -30,19 +30,19 @@ const Navbar = () => {
           </button>
         </a>
 
-        <a href="tel:8838771582">
+        <a href="tel:9566381222">
 
           <div className={styles.contactText}>
               <img src="/ImageFolder/Home/Phone_Logo.png" alt="" />
-              <p>+91 9999999999</p>
+              <p>+91 9566381222</p>
           </div>
         </a>
 
-        <a href="https://api.whatsapp.com/send?phone=917598004142&text=Naadi_Astrology">
+        <a href="https://api.whatsapp.com/send?phone=9566381222&text=Naadi_Astrology">
 
           <div className={styles.contactText}>
               <img src="/ImageFolder/Home/whatsapp.png" alt="" />
-              <p>+91 9999999999</p>
+              <p>+91 9566381222</p>
           </div>
         </a>
         {/* Contact + Language */}

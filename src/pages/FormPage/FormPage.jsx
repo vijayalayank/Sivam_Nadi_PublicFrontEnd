@@ -8,7 +8,7 @@ const AstrologyForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobile: "",
+    number: "",
     dob: "",
     appointment_date: "",
   });
@@ -49,7 +49,7 @@ const AstrologyForm = () => {
       setFormData({
         name: "",
         email: "",
-        mobile: "",
+        number: "",
         dob: "",
         appointment_date: "",
       });
@@ -89,12 +89,12 @@ const AstrologyForm = () => {
 
           <input
             type="tel"
-            name="mobile"
+            name="number"
             placeholder="Mobile Number"
             pattern="[0-9]{10}"
             maxLength="10"
             required
-            value={formData.mobile}
+            value={formData.number}
             onChange={handleChange}
           />
 
