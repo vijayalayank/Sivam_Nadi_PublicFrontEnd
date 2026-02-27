@@ -1,33 +1,8 @@
 import style from "./HomeAbout.module.css";
+import {HomeAboutdata} from "../../../LocalContent/Home"
 
 const HomeAbout = () => {
 
-    const data = [
-        {
-            title: "Nadi Astrology",
-            image: "/ImageFolder/Home/aboutRight1.jpeg"
-        },
-        {
-            title: "Our Heritage",
-            image: "/ImageFolder/Home/aboutRight2.jpeg"
-        },
-        {
-            title: "History of Nadi",
-            image: "/ImageFolder/Home/aboutRight3.jpeg"
-        },
-        {
-            title: "Nadi Procedure",
-            image: "/ImageFolder/Home/aboutRight4.jpeg"
-        },
-        {
-            title: "Chapters List",
-            image: "/ImageFolder/Home/aboutRight5.jpeg"
-        },
-        {
-            title: "Online Predictions",
-            image: "/ImageFolder/Home/aboutRight6.jpeg"
-        }
-    ];
 
     return (
         <div className={style.HomeAbout}>
@@ -58,7 +33,7 @@ const HomeAbout = () => {
 
                 {/* RIGHT SIDE CARDS */}
                 <div className={style.CardContiner}>
-                    {data.map((item, index) => (
+                    {HomeAboutdata.map((item, index) => (
                         <div className={style.Card} key={index}>
                             <div className={style.imageContiner}>
                                 <img src={item.image} alt={item.title} />

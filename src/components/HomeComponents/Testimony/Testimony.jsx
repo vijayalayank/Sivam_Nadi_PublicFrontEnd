@@ -1,32 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import style from "./Testimony.module.css";
 import Marquee from "react-fast-marquee";
-// import Contact_button from "../../../Layout/Contact_us_button/contact_us_button";
-
+import {TestimonyData} from  "../../../LocalContent/Home"
 
 export default function ParentsReview() {
 
   const [marqueeDirection, setMarqueeDirection] = useState("left"); // Default: horizontal
-
-
-    const images = [
-        {
-            content:"சிவநாடி ஜோதிடம் சென்று வந்தேன். என்னுடைய வாழ்க்கையில் நடந்த இறந்தகாலம் நிகழ்காலம் அனைத்தையும் மிக துல்லியமாக கூறுகின்றனர். எனக்கு  ஆச்சரியமாக இருந்தது. எனக்கு மனத்தெளிவு கிடைத்தது அவர்கள் நீண்ட காலம் வாழ இறைவனை மனதார பிரார்த்தனை செய்து கொள்கிறேன். வணக்கமும் வாழ்த்துக்களும் 🙏 I went to Shivnadi Astrology. They tell very accurately everything that has happened in my life past and present. I was surprised. I got clarity and pray to God for long life for them. Greetings and greetings",
-            author:"Parthipan"
-        },
-        {
-            content:"சிவநாடி ஜோதிடம் சென்று வந்தேன். என்னுடைய வாழ்க்கையில் நடந்த இறந்தகாலம் நிகழ்காலம் அனைத்தையும் மிக துல்லியமாக கூறுகின்றனர். எனக்கு  ஆச்சரியமாக இருந்தது. எனக்கு மனத்தெளிவு கிடைத்தது அவர்கள் நீண்ட காலம் வாழ இறைவனை மனதார பிரார்த்தனை செய்து கொள்கிறேன். வணக்கமும் வாழ்த்துக்களும் 🙏 I went to Shivnadi Astrology. They tell very accurately everything that has happened in my life past and present. I was surprised. I got clarity and pray to God for long life for them. Greetings and greetings",
-            author:"Parthipan"
-        },
-        {
-            content:"சிவநாடி ஜோதிடம் சென்று வந்தேன். என்னுடைய வாழ்க்கையில் நடந்த இறந்தகாலம் நிகழ்காலம் அனைத்தையும் மிக துல்லியமாக கூறுகின்றனர். எனக்கு  ஆச்சரியமாக இருந்தது. எனக்கு மனத்தெளிவு கிடைத்தது அவர்கள் நீண்ட காலம் வாழ இறைவனை மனதார பிரார்த்தனை செய்து கொள்கிறேன். வணக்கமும் வாழ்த்துக்களும் 🙏 I went to Shivnadi Astrology. They tell very accurately everything that has happened in my life past and present. I was surprised. I got clarity and pray to God for long life for them. Greetings and greetings",
-            author:"Parthipan"
-        },
-        {
-            content:"சிவநாடி ஜோதிடம் சென்று வந்தேன். என்னுடைய வாழ்க்கையில் நடந்த இறந்தகாலம் நிகழ்காலம் அனைத்தையும் மிக துல்லியமாக கூறுகின்றனர். எனக்கு  ஆச்சரியமாக இருந்தது. எனக்கு மனத்தெளிவு கிடைத்தது அவர்கள் நீண்ட காலம் வாழ இறைவனை மனதார பிரார்த்தனை செய்து கொள்கிறேன். வணக்கமும் வாழ்த்துக்களும் 🙏 I went to Shivnadi Astrology. They tell very accurately everything that has happened in my life past and present. I was surprised. I got clarity and pray to God for long life for them. Greetings and greetings",
-            author:"Parthipan"
-        }
-    ]
 
   useEffect(() => {
     const updateDirection = () => {
@@ -61,7 +40,7 @@ export default function ParentsReview() {
                 className={style.marquee}
                 style={marqueeDirection === "up" ? { height: "320px" } : {}}
                 >
-                {images.map((image, index) => (
+                {TestimonyData.map((image, index) => (
                   <div key={index} className={style.main_slid}>
                     {/* <img src={image.img} alt="Image Loading..." className={style.slid_img} /> */}
                     <div className={style.slid_content}>

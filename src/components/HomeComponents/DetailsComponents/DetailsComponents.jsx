@@ -1,29 +1,14 @@
 import style from "./DetailsComponents.module.css";
-
+import {DetailComponentData} from "../../../LocalContent/Home"
 
 const DetailsComponents = () => {
-
-    const content = [
-        {   image:"/ImageFolder/Home/AuthenticReading.png",
-            title: "AUTHENTIC READING",
-            description: "Get your Nadi reading from the original Nadi family"
-        },
-        {   image:"/ImageFolder/Home/Languages.png",
-            title: "AVAILABLE IN MAJOR LANGUAGES",
-            description: "தமிழ், English, Hindi, Telugu, Kanada"
-        },
-        {   image:"/ImageFolder/Home/TakeToUs.png",
-            title: "TALK TO US",
-            description: "+91 75980 04142 / 82709 94142"
-        }
-    ];
 
     return (
         <>
             <div className={style.outerBlock}>
 
                 {
-                    content.map((item, index) => {
+                    DetailComponentData.map((item, index) => {
                         return (
                             <div className={style.box1} key={index}>
                                 <img src={item.image} alt="" />
@@ -33,25 +18,6 @@ const DetailsComponents = () => {
                         )
                     })
                 }
-                
-
-    
-
-                {/* <div className={style.box2}>
-                    <div className={style.InnerBox2}>
-                        <div className={style.Title2}>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div className={style.box3}>
-                    <div className={style.InnerBox3}>
-                        <div className={style.Title3}>
-
-                        </div>
-                    </div>
-                </div> */}
 
             </div>
         </>

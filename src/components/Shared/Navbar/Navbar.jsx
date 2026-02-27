@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href="/">
           <div className={styles.logoSection}>
             <img
-              src="/ImageFolder/Home/Logo.png"
+              src="/ImageFolder/Home/Logo.jpeg"
               alt="Logo"
               className={styles.logo}
             />

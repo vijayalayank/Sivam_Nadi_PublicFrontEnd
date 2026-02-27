@@ -31,9 +31,6 @@ const WelcomeComponent = () => {
 
                             <p>Nadi Astrology helps you understand your karma, remove past sins, and make your future more favorable through proper pooja and pariharam (remedies).</p>
 
-                            {/* <p>We provide the most authentic Nadi predictions, addressing all aspects of life such as marriage, love life, 
-                            career, and education, along with appropriate remedies.
-                            Receive accurate guidance from certified and experienced astrologers.</p> */}
 
 
                         </div>
