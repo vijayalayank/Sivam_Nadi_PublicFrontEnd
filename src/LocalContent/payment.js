@@ -11,12 +11,12 @@ const PaymentHeaderImage = {
 const FeeStruc = {
     title:"Siva Nadi Fees Structure",
     image:Feestrucimg,
-    content:`We believe trust is earned, not demanded.
-Your satisfaction is our highest priority, and we stand by the accuracy and integrity of our guidance.
-There are no hidden conditions — you decide the value of our service after experiencing it.
-We are committed to delivering clarity, honesty, and meaningful insights in every consultation.
-Only when you feel truly satisfied and confident in the service provided should you proceed with payment.
-Your peace of mind matters more to us than anything else.`
+    content:`We believe trust is earned through transparency and genuine service.
+Your satisfaction is our promise, and we confidently stand behind the accuracy and integrity of our guidance.
+There are no hidden conditions — if you are not completely satisfied, we offer a full refund.
+Our commitment is to provide clarity, honesty, and meaningful spiritual insights in every consultation.
+We encourage you to experience our service with complete peace of mind and confidence.
+Your happiness and trust matter more to us than anything else.`
 }
 
 const AccountDetails = {
