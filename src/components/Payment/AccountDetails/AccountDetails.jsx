@@ -13,8 +13,7 @@ export default function AccountDetailes(){
 
             <div>
                 <strong>{AccountDetails.accountholder[0]}</strong>
-            </div>
-            <div>
+            
                 <span>{AccountDetails.accountholder[1]}</span>
             </div>
             <div>
