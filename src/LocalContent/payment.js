@@ -9,7 +9,7 @@ const PaymentHeaderImage = {
 }
 
 const FeeStruc = {
-    title:"Siva Nadi Fees Structure",
+    title:"Sivam Nadi Fees Structure",
     image:Feestrucimg,
     content:`We believe trust is earned through transparency and genuine service.
 Your satisfaction is our promise, and we confidently stand behind the accuracy and integrity of our guidance.
@@ -22,7 +22,7 @@ Your happiness and trust matter more to us than anything else.`
 const AccountDetails = {
     title:"Bank Account Details",
     image:bankimg,
-    accountholder:["Account Holder Name : ","Mr. ARUL SIVAM KN"],
+    accountholder:["Account Holder Name : ","Mr. ARUL SIVAM KM"],
     accountnumber:["Account Number : ", "38807307821"],
     bankname:["Bank Name : ","STATE BANK OF INDIA"],
     accounttype:["Account Type : ","REGULAR SAVINGS BANK ACCOUNT"],

@@ -3,7 +3,8 @@ import GalleryImages from "../../components/GalleryImages/GalleryImages";
 import { useState,useEffect } from "react";
 import styles from "./Gallery.module.css"
 import axios from "axios";
-
+import seoData from "../../data/seoData";
+import SEO from "../../components/SEO/SEO"
 
 function Gallary() {
 
@@ -21,6 +22,8 @@ function Gallary() {
 
   return (
     <div>
+
+<SEO {...seoData.gallery} />
 
    
 <ImageHeroSection

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import styles from "./FormPage.module.css";
 import axios from "axios";
+import seoData from "../../data/seoData";
+import SEO from "../../components/SEO/SEO"
+
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
@@ -70,6 +73,8 @@ const AstrologyForm = () => {
   };
 
   return (
+    <>
+    {/* <SEO {...seoData.form} /> */}
     <div className={styles.container}>
       <div className={styles.card}>
         <h2 className={styles.title}>✨ Astrology Appointment ✨</h2>
@@ -141,6 +146,8 @@ const AstrologyForm = () => {
         </form>
       </div>
     </div>
+
+    </>
   );
 };
 

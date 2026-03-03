@@ -7,7 +7,7 @@ export default function FeeStructure({FeeStruc}){
     <>
         <div className={style.main}>
        
-        <GoldenHeader heading={"Siva Nadi Fees Structure"}/>
+        <GoldenHeader heading={FeeStruc.title}/>
 
         <div className={style.abc}>
             <div className={style.imageWrapper}>

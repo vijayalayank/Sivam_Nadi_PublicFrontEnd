@@ -3,9 +3,12 @@ import styles from "./Chapters.module.css";
 
 import Chapter from "../../components/Chapter/Chapter";
 import ImageHeroSection from "../../components/Shared/ImageHeroSection/ImageHeroSection";
-
+import seoData from "../../data/seoData";
+import SEO from "../../components/SEO/SEO"
 function Chapters() {
   return (
+    <>
+    <SEO {...seoData.chapters} />
     <div className={styles.page}>
 
       <ImageHeroSection
@@ -36,6 +39,7 @@ function Chapters() {
       </section>
 
     </div>
+    </>
   );
 }
 
