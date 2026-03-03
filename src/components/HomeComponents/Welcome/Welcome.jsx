@@ -7,19 +7,19 @@ const WelcomeComponent = () => {
         <>
             <div className={style.outerContainer}>
                 <div className={style.Title}>
-                    <h1>The Original Heriditary Nadi Family Of Tharagambadi</h1>
+                    <h1>The Original Hereditary Nadi Family Of Tharangambadi</h1>
                 </div>
 
                 <div className={style.welcomeContainer}>
                     <div className={style.box1}>
                         <div className={style.Image}>
-                                <img src="/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
+                                <img src="/ImageFolder/Home/Welcome_Image1.jpeg" alt="" loading="lazy"/>
                         </div>
                     </div>
 
                     <div className={style.box2}>
                         <div className={style.WelTitle}>
-                            <h2>Welcome to Guruji M. Arulsivam Sivanadi Astrology Center </h2>
+                            <h2>Welcome to Guruji M. Arul Sivam Sivamnadi Astrology Center </h2>
                         </div>
 
                         <div className={style.para}>
@@ -39,7 +39,7 @@ const WelcomeComponent = () => {
 
                     <div className={style.box3}>
                         <div className={style.Image}>
-                            <img src="/ImageFolder/Home/Welcome_Image1.jpeg" alt="" />
+                            <img src="/ImageFolder/Home/Welcome_Image1.jpeg" alt="" loading="lazy"/>
 
                         </div>
                     </div>

@@ -11,7 +11,7 @@ const DetailsComponents = () => {
                     DetailComponentData.map((item, index) => {
                         return (
                             <div className={style.box1} key={index}>
-                                <img src={item.image} alt="" />
+                                <img src={item.image} alt="" loading="lazy" />
                                 <h2 className={style.Title}>{item.title}</h2>
                                 <p className={style.Description}>{item.description}</p>
                             </div>

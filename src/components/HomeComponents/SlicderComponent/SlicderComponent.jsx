@@ -82,6 +82,7 @@ const HomeSection = () => {
             src={content[currentIndex].image}
             alt="Nadi Astrology"
             className={styles.mainImage}
+            loading="lazy"
           />
           <p className={styles.description}>
             {content[currentIndex].description}
@@ -98,6 +99,7 @@ const HomeSection = () => {
           src="/ImageFolder/Home/rightImage1.png"
           alt="Astrologer"
           className={styles.sideImage}
+          loading="lazy"
         />
 
         <div className={styles.buttonContainer}>

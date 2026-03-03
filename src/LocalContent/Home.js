@@ -27,27 +27,34 @@ const content = [
 const HomeAboutdata = [
         {
             title: "Nadi Astrology",
-            image: "/ImageFolder/Home/aboutRight1.jpeg"
+            image: "/ImageFolder/Home/aboutRight1.png",
+            link:"/about_us"
+
         },
         {
             title: "Our Heritage",
-            image: "/ImageFolder/Home/aboutRight2.jpeg"
+            image: "/ImageFolder/Home/aboutRight2.jpeg",
+            link:""
         },
         {
             title: "History of Nadi",
-            image: "/ImageFolder/Home/aboutRight3.jpeg"
+            image: "/ImageFolder/Home/aboutRight3.png",
+            link:"/about_us"
         },
         {
             title: "Nadi Procedure",
-            image: "/ImageFolder/Home/aboutRight4.jpeg"
+            image: "/ImageFolder/Home/aboutRight4.png",
+            link:""
         },
         {
             title: "Chapters List",
-            image: "/ImageFolder/Home/aboutRight5.jpeg"
+            image: "/ImageFolder/Home/aboutRight5.png",
+            link:"/Chapters"
         },
         {
             title: "Online Predictions",
-            image: "/ImageFolder/Home/aboutRight6.jpeg"
+            image: "/ImageFolder/Home/aboutRight6.png",
+            link:"/appointment_form"
         }
     ];
 

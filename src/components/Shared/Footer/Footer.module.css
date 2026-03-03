@@ -37,7 +37,8 @@
     margin:1em 0em;
     display: flex;
     flex-direction: column;
-    width:60%;
+    align-items: center;
+    width:75%;
     padding:0em 1em;
 }
 
@@ -57,9 +58,16 @@
     padding:.5em 1em;
     border-radius: .5em;
     border:  none;
-    background-color: #F1CD74;
+    background-color: #008000;
     font-size: 1em;
-    color: black;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.button:hover{
+    box-shadow: .3em .3em .5em #000;
+    transform: scale(1.06);
+    cursor:pointer;
 }
 
 .box3{

@@ -18,7 +18,8 @@ const HomeAbout = () => {
                 <div className={style.poster}>
                     <img 
                         src="/ImageFolder/Home/Home_About.jpeg" 
-                        alt="Nadi Astrology" 
+                        alt="Nadi Astrology"
+                        loading="lazy" 
                     />
 
                     <div className={style.buttonContiner}>
@@ -34,13 +35,18 @@ const HomeAbout = () => {
                 {/* RIGHT SIDE CARDS */}
                 <div className={style.CardContiner}>
                     {HomeAboutdata.map((item, index) => (
+                        
                         <div className={style.Card} key={index}>
-                            <div className={style.imageContiner}>
-                                <img src={item.image} alt={item.title} />
-                            </div>
-                            <div className={style.TextContiner}>
-                                <p>{item.title}</p>
-                            </div>
+                            <a href={item.link}>
+
+                                <div className={style.imageContiner}>
+                                    <img src={item.image} alt={item.title} loading="lazy" />
+                                </div>
+                                <div className={style.TextContiner}>
+                                    <p>{item.title}</p>
+                                </div>
+                                
+                            </a>
                         </div>
                     ))}
                 </div>

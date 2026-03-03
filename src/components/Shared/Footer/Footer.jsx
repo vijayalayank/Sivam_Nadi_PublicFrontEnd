@@ -29,20 +29,19 @@ const Footer = () => {
             <div className={style.box2}>
 
                 <div className={style.Title}>
-                    <h2>Send Us A Message   </h2>
+                    <h2>Grievance   </h2>
                 </div>
 
                 <div className={style.form}>
-                    <input type="text" placeholder="Name"  className={style.field}/>
 
-                    <input type="text" placeholder="Email"  className={style.field}/>
-
-                    <input type="text" placeholder="Mobile"  className={style.field}/>
-
-                    <textarea name="Message" placeholder="Message" rows="4" className={style.field}></textarea>
+                    <p>If you have any complaint, dissatisfaction,
+                    or concern regarding our Nadi reading services, contact
+                    us immediately without hesitation or delay.</p>
 
                     <div className={style.submit}>
-                        <button className={style.button}>Send Message</button>
+                        <a href="tel:9566381222">
+                            <button className={style.button}>Call Us</button>
+                        </a>
                     </div>
                 </div>
 
@@ -54,7 +53,7 @@ const Footer = () => {
                     <h2>Nadi Astrology</h2>
                 </div>
                 <div className={style.Title2}>
-                    <h2>Sivanadi Astrology Center</h2>
+                    <h2>Sivamnadi Astrology Center</h2>
                 </div>
 
                 <div className={style.option}>

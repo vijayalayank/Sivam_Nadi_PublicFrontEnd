@@ -30,7 +30,10 @@
 
 .Description{
     padding:0em 2em 2em .5em;
-    text-align: center;   
+    width:100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box1:hover{

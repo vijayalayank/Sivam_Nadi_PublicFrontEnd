@@ -56,6 +56,7 @@
     background-color: #008000;
     color:aliceblue;
     transition: all .3s ease;
+    cursor:pointer;
 }
 
 
@@ -67,6 +68,7 @@
     border-radius: 5px;
     background-color:#F1CD74 ;
     transition: all .3s ease;
+    cursor:pointer;
 }
 
 .Call:hover{
@@ -224,7 +226,7 @@
 
 
 /* ---------- Small Mobile (Below 400px) ---------- */
-@media (max-width: 399px) {
+@media (max-width: 420px) {
 
     .CardContent {
         flex-direction: column;
