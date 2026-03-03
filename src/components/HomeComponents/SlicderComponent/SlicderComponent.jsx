@@ -2,6 +2,31 @@ import styles from "./SlicderComponent.module.css";
 import { useState, useEffect, useRef } from "react";
 import {content} from "../../../LocalContent/Home"
 
+<<<<<<< Updated upstream
+=======
+const content = [
+  {
+    image: "/src/assets/ImageFolder/Home/leftImage1.png",
+    description:
+      "Nadi astrology is specifically designed to guide individuals in pooja and pariharam."
+  },
+  {
+    image: "/src/assets/ImageFolder/Home/leftImage2.jpeg",
+    description:
+      "Yes, Nadi astrology predicts past, present, and future using ancient palm-leaf manuscripts."
+  },
+  {
+    image: "/src/assets/ImageFolder/Home/LeftImage3.png",
+    description:
+      "According to belief, Nadi Astrology predicts your future based on karmic records."
+  },
+  {
+    image: "/src/assets/ImageFolder/Home/LeftImage4.jpeg",
+    description:
+      "Nadi helps you understand karma and makes your future favorable."
+  }
+];
+>>>>>>> Stashed changes
 
 const HomeSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

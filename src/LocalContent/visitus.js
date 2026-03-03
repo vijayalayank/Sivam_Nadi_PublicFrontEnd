@@ -1,5 +1,5 @@
-import Visitusimg from "../../public/ImageFolder/VisitUs/visirusheader.png"
-import Roadmap from "../../public/ImageFolder/VisitUs/LocationRoadMapimg.png"
+import Visitusimg from "../assets/ImageFolder/VisitUs/visirusheader.png"
+import Roadmap from "../assets/ImageFolder/VisitUs/LocationRoadMapimg.png"
 
 const visit_header = {
     title:"Visit Us",

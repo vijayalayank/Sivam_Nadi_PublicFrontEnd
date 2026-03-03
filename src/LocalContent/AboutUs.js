@@ -1,19 +1,19 @@
-import AboutHistoryimg from "../../public/ImageFolder/AboutUs/HistoryOfNadi.jpeg"
-import AboutUsHeader from "../../public/ImageFolder/AboutUs/AboutUsHeader.png"
+import AboutHistoryimg from "../assets/ImageFolder/AboutUs/HistoryOfNadi.jpeg"
+import AboutUsHeader from "../assets/ImageFolder/AboutUs/AboutUsHeader.png"
 
 //ourservice images
 
-import SivaNadi from "../../public/ImageFolder/AboutUs/SIVA NADI.jpeg"
-import AgasthiyaNadi from "../../public/ImageFolder/AboutUs/Agasthiya Nadi.jpeg"
-import KowshikaNadi from "../../public/ImageFolder/AboutUs/Kowshika Nadi.jpeg"
-import BrammaNadi from "../../public/ImageFolder/AboutUs/Bramma Nadi.jpeg"
-import NandhiNadi from "../../public/ImageFolder/AboutUs/Nandhi Nadi.jpeg"
-import ThirumoolarNadi from "../../public/ImageFolder/AboutUs/Thirumoolar Nadi.jpeg"
-import VashishtaMaharishiNadi from "../../public/ImageFolder/AboutUs/Vashishta Maharishi Nadi.jpeg"
-import MaharishiBhriguNadi from "../../public/ImageFolder/AboutUs/Maharishi Bhrigu Nadi.jpeg"
+import SivaNadi from "../assets/ImageFolder/AboutUs/SIVA NADI.jpeg"
+import AgasthiyaNadi from "../assets/ImageFolder/AboutUs/Agasthiya Nadi.jpeg"
+import KowshikaNadi from "../assets/ImageFolder/AboutUs/Kowshika Nadi.jpeg"
+import BrammaNadi from "../assets/ImageFolder/AboutUs/Bramma Nadi.jpeg"
+import NandhiNadi from "../assets/ImageFolder/AboutUs/Nandhi Nadi.jpeg"
+import ThirumoolarNadi from "../assets/ImageFolder/AboutUs/Thirumoolar Nadi.jpeg"
+import VashishtaMaharishiNadi from "../assets/ImageFolder/AboutUs/Vashishta Maharishi Nadi.jpeg"
+import MaharishiBhriguNadi from "../assets/ImageFolder/AboutUs/Maharishi Bhrigu Nadi.jpeg"
 
 //VAITHEESWARAN 
-import VAITHEESWARANimg from "../../public/ImageFolder/AboutUs/VAITHEESWARAN .jpeg" 
+import VAITHEESWARANimg from "../assets/ImageFolder/AboutUs/VAITHEESWARAN .jpeg" 
 
 
 

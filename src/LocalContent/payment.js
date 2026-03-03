@@ -1,6 +1,6 @@
-import Payment_Header from "../../public/ImageFolder/Payment/Payment Header.png"
-import bankimg from "../../public/ImageFolder/Payment/Bank.png"
-import Feestrucimg from "../../public/ImageFolder/Payment/FeeStructure.png"
+import Payment_Header from "../assets/ImageFolder/Payment/Payment Header.png"
+import bankimg from "../assets/ImageFolder/Payment/Bank.png"
+import Feestrucimg from "../assets/ImageFolder/Payment/FeeStructure.png"
 
 
 const PaymentHeaderImage = {

@@ -1,10 +1,10 @@
-import headerimg from "../../public/ImageFolder/Pooja_remedies/PoojaHeaderimg.png"
-import r1 from "../../public/ImageFolder/Pooja_remedies/remedy1.png"
-import r2 from "../../public/ImageFolder/Pooja_remedies/remedy2.png"
-import r3 from "../../public/ImageFolder/Pooja_remedies/remedy3.png"
-import r4 from "../../public/ImageFolder/Pooja_remedies/remedy4.png"
-import r5 from "../../public/ImageFolder/Pooja_remedies/remedy5.png"
-import r6 from "../../public/ImageFolder/Pooja_remedies/remedy6.png"
+import headerimg from "../assets/ImageFolder/Pooja_remedies/PoojaHeaderimg.png"
+import r1 from "../assets/ImageFolder/Pooja_remedies/remedy1.png"
+import r2 from "../assets/ImageFolder/Pooja_remedies/remedy2.png"
+import r3 from "../assets/ImageFolder/Pooja_remedies/remedy3.png"
+import r4 from "../assets/ImageFolder/Pooja_remedies/remedy4.png"
+import r5 from "../assets/ImageFolder/Pooja_remedies/remedy5.png"
+import r6 from "../assets/ImageFolder/Pooja_remedies/remedy6.png"
 
 const pooja_header = {
     title:"Pooja Remedies",
