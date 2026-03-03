@@ -3,33 +3,7 @@ import {HomeAboutdata} from "../../../LocalContent/Home"
 
 const HomeAbout = () => {
 
-    const data = [
-        {
-            title: "Nadi Astrology",
-            image: "/src/assets/ImageFolder/Home/aboutRight1.jpeg"
-        },
-        {
-            title: "Our Heritage",
-            image: "/src/assets/ImageFolder/Home/aboutRight2.jpeg"
-        },
-        {
-            title: "History of Nadi",
-            image: "/src/assets/ImageFolder/Home/aboutRight3.jpeg"
-        },
-        {
-            title: "Nadi Procedure",
-            image: "/src/assets/ImageFolder/Home/aboutRight4.jpeg"
-        },
-        {
-            title: "Chapters List",
-            image: "/src/assets/ImageFolder/Home/aboutRight5.jpeg"
-        },
-        {
-            title: "Online Predictions",
-            image: "/src/assets/ImageFolder/Home/aboutRight6.jpeg"
-        }
-    ];
-
+  
     return (
         <div className={style.HomeAbout}>
 
