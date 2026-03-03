@@ -32,7 +32,7 @@ Nadi Astrology, practiced primarily in Tamil Nadu, South India, is traditionally
 
 const AboutHeaderImage = {
     image:AboutUsHeader,
-    title:"About Nadi Atrology"
+    title:"About Nadi Astrology"
 }
 
 const Ourservice = 
