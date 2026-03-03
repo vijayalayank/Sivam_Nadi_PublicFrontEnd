@@ -6,10 +6,16 @@ import HomeSection from "../../components/HomeComponents/SlicderComponent/Slicde
 import style from "./Home.module.css";
 import ParentsReview from "../../components/HomeComponents/Testimony/Testimony";
 import ScrollerComponent from "../../components/HomeComponents/ScrollerComponent/ScrollerComponent"
+import seoData from "../../data/seoData";
+import SEO from "../../components/SEO/SEO"
+
 
 const HomeIntagaration = () => {
 
     return (
+        <>
+        
+<SEO {...seoData.home} />
         <div className={style.outerContainer}>
             <HomeSection />
             <ScrollerComponent />
@@ -19,6 +25,8 @@ const HomeIntagaration = () => {
             <ParentsReview />
             <DetailsComponents/>
         </div>
+
+        </>
     )
 }
 
