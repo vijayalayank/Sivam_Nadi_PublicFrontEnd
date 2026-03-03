@@ -12,10 +12,8 @@ const Footer = () => {
                 </div>
 
                 <div className={style.para}>
-                    <p>GURUJI M ARUL SIVAM
-                        SIVAM NADI ASTROLOGY CENTER
-                    </p>
-
+                    <p>GURUJI M ARUL SIVAM,</p>
+                    <p>SIVAM NADI ASTROLOGY CENTER,</p>
                     <p>2/59B Main Road,
                     Valathanpattinam, Kidaran Kondan Post,</p>
                     <p>Mayiladuthurai to Poombuhar Main Road,</p>
@@ -26,6 +24,7 @@ const Footer = () => {
 
             
             </div>
+
             <div className={style.box2}>
 
                 <div className={style.Title}>
@@ -43,7 +42,10 @@ const Footer = () => {
                             <button className={style.button}>Call Us</button>
                         </a>
                     </div>
+
+                    
                 </div>
+
 
             </div>
 
@@ -62,13 +64,41 @@ const Footer = () => {
                     </a>
 
                     <a href="/Chapters">
-                        <p>Chapters</p>
+                        <p>Chapter List</p>
+                    </a>
+
+                    <a href="/payment">
+                        <p>Payment</p>
+                    </a>
+
+                    <a href="/pooja-remedy">
+                        <p>Pooja Remedies</p>
                     </a>
 
                     <a href="/visit_us">
                         <p>Visit Us</p>
                     </a>
                 </div>
+
+                <div className={style.Title}>
+                    <h2>Media Links</h2>
+                </div>
+
+                    <div className={`${style.mediaLink}`}>
+                        <a href="/">
+                            <div className={style.logo}>
+                                <img src="ImageFolder/Home/insta.png" alt="instagram" />
+                            </div>
+                        </a>
+
+                        <a href="/">
+                            <div className={style.logo}>
+                                <img src="ImageFolder/Home/facebook.png" alt="facebook" />
+                            </div>
+                        </a>
+                    </div>
+
+                
             </div>
         </div>
         </>

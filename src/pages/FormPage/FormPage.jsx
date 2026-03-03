@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./FormPage.module.css";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const AstrologyForm = () => {
   const domain = import.meta.env.VITE_DOMAIN;
@@ -27,25 +29,31 @@ const AstrologyForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
+    console.log(formData)
+
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.number ||
+      !formData.dob ||
+      !formData.appointment_date
+    ) {
+      alert("Please fill all required fields.");
+      return;
+    }
 
     if (!domain) {
-      alert("Server configuration error. Please contact admin.");
+      alert("Server configuration error.");
       return;
     }
 
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        `${domain}/api/users`,
-        formData
-      );
+      await axios.post(`${domain}/api/users`, formData);
 
-      console.log(response.data);
       alert("Appointment booked successfully!");
 
-      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -53,9 +61,8 @@ const AstrologyForm = () => {
         dob: "",
         appointment_date: "",
       });
-
     } catch (error) {
-      console.error("Submission error:", error);
+      console.error(error);
       alert("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
@@ -68,7 +75,7 @@ const AstrologyForm = () => {
         <h2 className={styles.title}>✨ Astrology Appointment ✨</h2>
 
         <form onSubmit={handleSubmit} className={styles.form}>
-
+          
           <input
             type="text"
             name="name"
@@ -87,16 +94,23 @@ const AstrologyForm = () => {
             onChange={handleChange}
           />
 
-          <input
-            type="tel"
-            name="number"
-            placeholder="Mobile Number"
-            pattern="[0-9]{10}"
-            maxLength="10"
-            required
-            value={formData.number}
-            onChange={handleChange}
-          />
+        <PhoneInput
+          country={"in"}
+          value={formData.number}
+          onChange={(phone) =>
+            setFormData((prev) => ({
+              ...prev,
+              number: "+" + phone,
+            }))
+          }
+          enableSearch={true}
+          countryCodeEditable={false}
+          prefix="+"
+          containerStyle={{ width: "100%" }}
+          inputProps={{
+            required: true,
+          }}
+        />
 
           <label>Date of Birth</label>
           <input
@@ -124,7 +138,6 @@ const AstrologyForm = () => {
           >
             {loading ? "Booking..." : "Book Appointment"}
           </button>
-
         </form>
       </div>
     </div>

@@ -7,7 +7,6 @@
   padding: 20px;
 }
 
-/* Card */
 .card {
   background: rgba(20, 10, 35, 0.95);
   border: 2px solid gold;
@@ -28,14 +27,13 @@
   letter-spacing: 1px;
 }
 
-/* Form */
 .form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Inputs */
+/* Regular Inputs */
 input {
   padding: 14px;
   border-radius: 10px;
@@ -77,8 +75,42 @@ label {
   box-shadow: 0 0 15px gold;
 }
 
+/* ===================== */
+/* Phone Input Styling   */
+/* ===================== */
+
+:global(.react-tel-input) {
+  width: 100%;
+}
+
+:global(.react-tel-input .form-control) {
+  width: 100% !important;
+  height: 48px !important;
+  padding-left: 60px !important;
+  border-radius: 10px !important;
+  border: 1px solid gold !important;
+  background-color: transparent !important;
+  color: white !important;
+  font-size: 15px !important;
+}
+
+:global(.react-tel-input .form-control:focus) {
+  box-shadow: 0 0 8px gold !important;
+  border-color: #ffd700 !important;
+}
+
+:global(.react-tel-input .flag-dropdown) {
+  background-color: transparent !important;
+  border: 1px solid gold !important;
+  border-radius: 10px 0 0 10px !important;
+}
+
+:global(.react-tel-input .selected-flag) {
+  background-color: transparent !important;
+}
+
 /* ---------------------------- */
-/* 📱 Small Mobile (320px–374px) */
+/* 📱 Small Mobile */
 /* ---------------------------- */
 @media (max-width: 374px) {
   .card {
@@ -95,39 +127,60 @@ label {
     font-size: 14px;
   }
 
-  button {
+  .button {
     padding: 12px;
     font-size: 14px;
   }
 }
 
-/* ---------------------------- */
-/* 📱 Mobile (375px–768px) */
-/* ---------------------------- */
-@media (min-width: 375px) and (max-width: 768px) {
-  .card {
-    padding: 30px;
-  }
 
-  .title {
-    font-size: 22px;
-  }
+/* 🌍 Country Dropdown Search - Force White Background & Black Text */
+:global(.react-tel-input .country-list .search-box) {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #ccc !important;
 }
 
-/* ---------------------------- */
-/* 💻 Tablet (769px–1024px) */
-/* ---------------------------- */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .card {
-    max-width: 550px;
-  }
+:global(.react-tel-input .country-list .search-box input) {
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
-/* ---------------------------- */
-/* 🖥 Desktop (1025px+) */
-/* ---------------------------- */
-@media (min-width: 1025px) {
-  .card {
-    max-width: 600px;
-  }
+:global(.react-tel-input .country-list .search-box input::placeholder) {
+  color: #666666 !important;
+  opacity: 1 !important;
+}
+
+
+
+
+/* 🌍 Country Dropdown Search Styling */
+:global(.react-tel-input .country-list) {
+  background-color: #1a0f2e !important;
+  border: 1px solid gold !important;
+}
+
+:global(.react-tel-input .country-list .search) {
+  background-color: #0b0615 !important;
+  color: gold !important;
+  border: 1px solid gold !important;
+}
+
+:global(.react-tel-input .country-list .search::placeholder) {
+  color: #ffd700 !important;
+  opacity: 0.7;
+}
+
+/* Highlight hovered country */
+:global(.react-tel-input .country-list .country:hover) {
+  background-color: rgba(255, 215, 0, 0.15) !important;
+}
+
+:global(.react-tel-input .country-list .country ) {
+  color:#fff;
+}
+
+/* Selected country highlight */
+:global(.react-tel-input .country-list .country.highlight) {
+  background-color: rgba(255, 215, 0, 0.25) !important;
 }
