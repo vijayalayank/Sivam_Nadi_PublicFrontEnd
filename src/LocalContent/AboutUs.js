@@ -11,6 +11,7 @@ import NandhiNadi from "../../public/ImageFolder/AboutUs/Nandhi Nadi.jpeg"
 import ThirumoolarNadi from "../../public/ImageFolder/AboutUs/Thirumoolar Nadi.jpeg"
 import VashishtaMaharishiNadi from "../../public/ImageFolder/AboutUs/Vashishta Maharishi Nadi.jpeg"
 import MaharishiBhriguNadi from "../../public/ImageFolder/AboutUs/Maharishi Bhrigu Nadi.jpeg"
+import BogarNadi from "../../public/ImageFolder/AboutUs/BOGAR NADI.png"
 
 //VAITHEESWARAN 
 import VAITHEESWARANimg from "../../public/ImageFolder/AboutUs/VAITHEESWARAN .jpeg" 
@@ -50,7 +51,7 @@ const Ourservice =
         image:KowshikaNadi
     },
     {
-        title:"BRAHMA NADI",
+        title:"BRAMA NADI",
         image:BrammaNadi
     },
     {
@@ -69,6 +70,10 @@ const Ourservice =
         title:"MAHARISHI BHRIGU NADI",
         image:MaharishiBhriguNadi
     },
+    {
+        title:"BOGAR NADI",
+        image:BogarNadi
+    }
 ]
 
 const VAITHEESWARAN ={
