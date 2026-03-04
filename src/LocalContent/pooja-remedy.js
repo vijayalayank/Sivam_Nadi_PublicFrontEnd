@@ -13,7 +13,12 @@ const pooja_header = {
 
 const remedyImages = 
 [
-   {
+    {
+        image:r4,
+        title:"GauShala Pooja",
+        des:"Devotees perform a sacred ritual honoring cows, which are decorated with garlands and white cloth. The ceremony takes place near a temple, reflecting the cultural and spiritual importance of cows in Hindu tradition as symbols of purity, prosperity, and divine energy."
+    },
+    {
     image:r1,
     title:"Annadhanam to Sadhus",
     des:"A group of Hindu sadhus dressed in saffron robes are seated in a temple courtyard, receiving food served on banana leaves. A priest in traditional white attire respectfully serves them from brass vessels. The setting reflects the sacred practice of Annadhanam (food donation), symbolizing humility, devotion, and service in a temple environment with ancient stone architecture."
@@ -27,11 +32,6 @@ const remedyImages =
     image:r3,
     title:"Pooja for Ancestors",
     des:"A family performs a ritual in front of a sacred fire with framed photographs of ancestors placed respectfully nearby. Offerings such as rice, fruits, and flowers are arranged on banana leaves. The ceremony signifies remembrance, gratitude, and seeking blessings from departed forefathers."
-   },
-   {
-    image:r4,
-    title:"Gau Pooja",
-    des:"Devotees perform a sacred ritual honoring cows, which are decorated with garlands and white cloth. The ceremony takes place near a temple, reflecting the cultural and spiritual importance of cows in Hindu tradition as symbols of purity, prosperity, and divine energy."
    },
    {
     image:r5,
