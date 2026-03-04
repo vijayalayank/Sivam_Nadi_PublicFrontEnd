@@ -50,7 +50,13 @@ const seoData = {
       keywords:
         "Cow Pooja, Gau Pooja, Govardhan Puja, Goshala Seva, Nadi Pariharam",
       canonical: "https://sivamnadiastrology.com/pooja-remedies",
-    }
+    },
+    nadiProcedure: {
+      title: "Nadi Astrology Procedure | How Nadi Reading Works",
+      description:
+        "Learn the complete Nadi astrology process including thumb impression submission, leaf matching and consultation with Guruji M. Arul Sivam.",
+      canonical: "https://sivamnadiastrology.com/nadi-procedure",
+    },
   };
   
   export default seoData;

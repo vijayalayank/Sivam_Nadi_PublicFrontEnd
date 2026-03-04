@@ -44,7 +44,7 @@ const HomeAboutdata = [
         {
             title: "Nadi Procedure",
             image: "/ImageFolder/Home/aboutRight4.png",
-            link:""
+            link:"/Nadi_Procedure"
         },
         {
             title: "Chapters List",

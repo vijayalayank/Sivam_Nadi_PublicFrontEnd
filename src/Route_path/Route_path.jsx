@@ -12,6 +12,7 @@ const VisitUs = lazy(() => import("../pages/VisitUs/VisitUs"));
 const PoojaRemedy = lazy(() => import("../pages/PoojaRemedy/PoojaRemedy"));
 const AstrologyForm = lazy(() => import("../pages/FormPage/FormPage"));
 const NotFound = lazy(() => import("../pages/NotFound/NotFound"));
+import NadiProcedure from "../pages/NadiProcedure/NadiProcedure";
 
 export default function Route_path() {
   return (
@@ -27,6 +28,7 @@ export default function Route_path() {
           <Route path="/visit_us" element={<VisitUs />} />
           <Route path="/pooja-remedy" element={<PoojaRemedy />} />
           <Route path="/appointment_form" element={<AstrologyForm />} />
+          <Route path="/Nadi_Procedure" element={<NadiProcedure />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
