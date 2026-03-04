@@ -1,6 +1,6 @@
 const seoData = {
     home: {
-      title: "Sivam Nadi Astrology | Original Nadi Family",
+      title: "SIVAM NADI ASTROLOGY | SIVA NADI | NADI | Vaitheeswaran Koil Nadi Astrology | Guruji M Arulsivam",
       description:
         "Authentic Nadi astrology reading by Guruji M. Arulsivam in Vaitheeswaran Koil.",
       keywords:
@@ -44,7 +44,7 @@ const seoData = {
       robots: "noindex, follow",
     },
     pooja: {
-      title: "Cow Pooja & Gau Seva | Pooja Remedies | Sivam Nadi Astrology",
+      title: "GauShala Pooja & Gau Seva | Govardhan Puja | Pooja Remedies | Sivam Nadi Astrology",
       description:
         "Perform Gau Pooja, Govardhan Puja and sacred cow seva at Sivam Nadi Astrology. Book spiritual remedies guided by Guruji M. Arulsivam.",
       keywords:
